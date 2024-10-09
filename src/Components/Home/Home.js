@@ -10,7 +10,6 @@ import howtoImage from '../../assets/howto/howto-section.svg';
 import billLogo from '../../assets/logos/bill.png';
 import shopifyLogo from '../../assets/logos/shopify.png';
 import gustoLogo from '../../assets/logos/gusto.png';
-import inc5000Logo from '../../assets/logos/inc5000.png';
 import plaidLogo from '../../assets/logos/plaid.png';
 import squareLogo from '../../assets/logos/square.png';
 import stripeLogo from '../../assets/logos/stripe.png';
@@ -38,6 +37,13 @@ function Home() {
 
   const scrollToPreCall = () => {
     const element = document.getElementById('pre-call');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const scrollToPricing = () => {
+    const element = document.getElementById('pricing');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -73,7 +79,7 @@ function Home() {
               <p>Experience precision and transparency, supported by guarantee for your success.</p>
             </div>
             <div className="button">
-              <a href="#pre-pricing">Learn More</a>
+              <a href="#pricing" onClick={scrollToPricing}>Learn More</a>
             </div>
           </header>
           <div className="image">
@@ -156,7 +162,7 @@ function Home() {
               </ul>
             </div>
             <div className="button">
-              <a href="#pre-call">Start Now</a>
+              <a href="#pre-call" onClick={scrollToPreCall}>Start Now</a>
             </div>
           </header>
           <div className="image">
@@ -207,7 +213,7 @@ function Home() {
               <div class="price">
                 <h2></h2>
                 <div class="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
@@ -228,7 +234,7 @@ function Home() {
               <div className="price">
                 <h2></h2>
                 <div className="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall} >Book a Call</a>
                 </div>
               </div>
             </div>
@@ -283,7 +289,7 @@ function Home() {
               <div className="price">
                 {/* <h2>$357 /месяц</h2> */}
                 <div className="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall} >Book a Call</a>
                 </div>
               </div>
             </div>
@@ -343,7 +349,7 @@ function Home() {
               <div className="price">
                 {/* <h2>$672 /месяц</h2> */}
                 <div className="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
@@ -410,7 +416,7 @@ function Home() {
               <div className="price">
                 {/* <h2>$1,350 /месяц</h2> */}
                 <div className="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
@@ -448,7 +454,7 @@ function Home() {
               <div class="price">
                 <h2></h2>
                 <div class="button">
-                  <a href="#pre-call">Book a Call</a>
+                  <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
