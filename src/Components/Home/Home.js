@@ -211,7 +211,6 @@ function Home() {
                 <p>In a private conference, we will thoroughly examine the financial position of your business and the current state of accounting, offering optimal solutions.</p>
               </div>
               <div class="price">
-                <h2></h2>
                 <div class="button">
                   <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
@@ -452,7 +451,6 @@ function Home() {
                 <p>Create a personalized plan designed for your needs, which may include services from other plans and even more!</p>
               </div>
               <div class="price">
-                <h2></h2>
                 <div class="button">
                   <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
