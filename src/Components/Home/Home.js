@@ -15,6 +15,7 @@ import squareLogo from '../../assets/logos/square.png';
 import stripeLogo from '../../assets/logos/stripe.png';
 import quickbooksLogo from '../../assets/logos/quickbooks.png';
 import spotifyLogo from '../../assets/logos/spotify.png';
+import family from '../../assets/about/family.jpg'
 
 // Service icons
 import serviceAnalysis from '../../assets/services/service-analysis.svg';
@@ -24,7 +25,13 @@ import serviceAdvice from '../../assets/services/service-advice.svg';
 import serviceTaxes from '../../assets/services/service-taxes.svg';
 import serviceAssist from '../../assets/services/service-assist.svg';
 
+// Testimonials
+import Seka from '../../assets/logos/feedback-seka.png';
+import Ferla from '../../assets/logos/feedback-ferla.png';
+import Whizz from '../../assets/logos/feedback-whizz.png';
+
 function Home() {
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -42,12 +49,38 @@ function Home() {
     }
   };
 
-  const scrollToPricing = () => {
-    const element = document.getElementById('pricing');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+  // const scrollToPricing = () => {
+  //   const element = document.getElementById('pricing');
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   }
+  // };
+
+  const testimonials = [
+    {
+      id: 1,
+      imageUrl: Seka,
+      name: 'Serik Baimoldayev',
+      role: 'CEO, Example Co.',
+      text: '"Go4Profit transformed our financial management! The dedicated expert we were assigned made sure we understood our reports clearly, and now we know exactly where to focus to grow our business."',
+    },
+    {
+      id: 2,
+      imageUrl: Whizz,
+      name: 'Alex Mironov',
+      role: 'Marketing Director, Sample Inc.',
+      text: '"Their monthly financial reviews helped us spot areas where we were losing money. Thanks to their clear explanations, we’ve optimized our expenses and improved our bottom line. Highly recommended!"',
+    },
+    {
+      id: 3,
+      imageUrl: Ferla,
+      name: 'Feras Bashnak',
+      role: 'Developer, Tech Solutions',
+      text: '"I was amazed by how easy they made bookkeeping for us. Their team was always available to walk us through everything from daily payment categorization to tax prep. We’re in good hands!"',
+    },
+  ];
+
+
 
   return (
     <div>
@@ -59,103 +92,157 @@ function Home() {
         <ul>
           <li>
             <div className="button">
-              <a href="#pre-call" onClick={scrollToPreCall}>Free Analysis</a>
+              <a href="#pre-call" onClick={scrollToPreCall}>Free Consultation</a>
             </div>
           </li>
         </ul>
       </nav>
 
-      {/* Hero Section */}
       <main>
+
+        {/* Headline */}
         <section id="hero" className="flex_center">
           <header>
             <div className="text">
-              <h3>Our Mission</h3>
+              <h3>Bookkeeping for Small & Medium Businesses</h3>
               <h1>
-                <span>Clean Bookkeeping -</span>
+                <span>Grow Your Business -</span>
                 <br />
-                The Foundation of Your Business
+                We’ll Handle the Bookkeeping
               </h1>
-              <p>Experience precision and transparency, supported by guarantee for your success.</p>
+              <p>As a family-owned business, we offer a <span>personalized approach</span>,
+                providing you with a dedicated bookkeeper expert who focuses solely
+                on your company.
+                <br />
+                <br />
+                When you work with us, you'll not only receive accurate financial
+                reports but also <span>clear explanations</span> and <span>analysis</span> of these metrics
+                on a monthly basis. This way, you'll understand where you're
+                losing money and what to focus on.</p>
             </div>
             <div className="button">
-              <a href="#pricing" onClick={scrollToPricing}>Learn More</a>
+              <a href="#pre-call" onClick={scrollToPreCall}>Schedule My Free Consultation</a>
             </div>
           </header>
           <div className="image">
             <div className="image-container">
-              <img src={heroImage} alt="Hero" />
+              <img src={family} alt="Hero" />
             </div>
           </div>
         </section>
 
-        {/* Trust Section */}
+        {/* Trust  */}
         <section id="trust">
-          <h2 style={{ marginBottom: '1.5rem' }}>Already Trusted By:</h2>
+          <h2 style={{ marginBottom: '1.5rem', fontWeight: 'bolder' }}>We work with the top software solutions in the industry</h2>
           <div className="carousel-container">
             <div className="carousel">
-              {[billLogo, shopifyLogo, gustoLogo, plaidLogo, squareLogo, stripeLogo, quickbooksLogo, spotifyLogo].map((logo, index) => (
+              {[billLogo, shopifyLogo, gustoLogo, plaidLogo, squareLogo, stripeLogo, quickbooksLogo].map((logo, index) => (
                 <img key={index} src={logo} alt={`Logo ${index + 1}`} />
               ))}
             </div>
           </div>
         </section>
 
-        {/* About Section */}
-        <section id="about" className="flex_center">
-          <header>
-            <div className="text">
-              <h3>Why choose us?</h3>
-              <h1>Precision, Reliability, and Your Success</h1>
-              <p>
-                Our accounting services eliminate financial disorder,
-                ensuring accuracy and transparency. We build the
-                foundation for sustainable growth of your business.
-                By choosing us, you not only get order in accounting
-                but also strategic financial planning and cash flow
-                management, ensuring stable growth and transparency of your business.
-              </p>
-            </div>
-          </header>
-          <div className="image">
-            <div className="image-container">
-              <img src={aboutImage} alt="About Us" />
-            </div>
-          </div>
-        </section>
-
-        {/* Services Section */}
+        {/* Services */}
         <section id="services">
           <div className="text">
-            <h3>What's the offer?</h3>
-            <h1>Services</h1>
+            <h3>Services</h3>
+            <h1>We provide a full cycle of bookkeeping services</h1>
           </div>
           <div className="grid-layout">
             {[
-              { src: serviceAnalysis, title: 'Financial Analysis' },
-              { src: serviceBook, title: 'Bank Reconciliation' },
-              { src: serviceCfo, title: 'Forecasting' },
-              { src: serviceAdvice, title: 'Financial Statements' },
-              { src: serviceTaxes, title: 'Risk Management' },
-              { src: serviceAssist, title: 'Finance Coaching' },
+              { src: serviceAnalysis, title: 'We record and categorize daily payments and expenses' },
+              { src: serviceTaxes, title: 'We send customer invoices and record payments received' },
+              { src: serviceBook, title: 'We conduct bank reconciliations every month' },
+              { src: serviceCfo, title: 'Each month, we review your financials with you, explaining everything in simple words' },
+              { src: serviceAdvice, title: 'We provide year-end reports to get you ready for tax season' },
+              { src: serviceAssist, title: 'Didn’t do your books before? No problem — we’ll help you get up to date with catch-up' },
             ].map((service, index) => (
               <div key={index} className="service">
                 <img src={service.src} alt={service.title} />
-                <h2>{service.title}</h2>
+                <p>{service.title}</p>
               </div>
             ))}
           </div>
         </section>
+
+        {/* Testimonials */}
+        <section id="testimonials">
+          <div className="text">
+            <h3>Testimonials</h3>
+            <h1>See what our clients have to say</h1>
+          </div>
+          <div className="testimonial-list">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.id} className="testimonial">
+                <div className="testimonial-text">
+                  <p>{testimonial.text}</p>
+                  <div className="testimonial-info">
+                    <img src={testimonial.imageUrl} alt={testimonial.name} />
+                    <span className="name">{testimonial.name}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section>
+          <div className="text">
+            <h3>What You Can Expect</h3>
+            <h1>Personal Support. Experts. Always Available. </h1>
+          </div>
+
+          <div id="about" className="flex_center">
+            <div className='expect-container'>
+              <ul>
+                <li>
+                  <strong>Full Cycle of Bookkeeping:</strong> We manage daily payments, categorize expenses, send invoices, track payments, and perform monthly bank reconciliations for accuracy.
+                </li>
+                <br />
+                <li>
+                  <strong>One-on-One Support:</strong> You'll have a dedicated bookkeeper who knows your business and is always ready to help.
+                </li>
+                <br />
+                <li>
+                  <strong>Easy-to-Read Financial Reports:</strong> Get clear financial reports that help you understand your current business situation and make smart decisions.
+                </li>
+                <br />
+                <li>
+                  <strong>We Grow Together:</strong> When your business grows, we grow with you.
+                </li>
+                <br />
+                <li>
+                  <strong>AI Tools:</strong> Use the latest technology to make your work easier, and your data is always safe with us.
+                </li>
+                <br />
+                <li>
+                  <strong>Real-Time Tracking:</strong> See your income and expenses anytime with up-to-date financials software.
+                </li>
+                <br />
+                <li>
+                  <strong>Full Automation:</strong> We improve and automate your financial system, so you don’t have to worry about it.
+                </li>
+              </ul>
+            </div>
+            <div className="expect-image">
+              <img src={heroImage} alt="About Us" />
+            </div>
+          </div>
+
+        </section>
+
 
         {/* How We Work Section */}
         <section id="howto" className="flex_center">
           <header>
             <div className="text">
               <h3>Workflow</h3>
-              <h1>How does it work:</h1>
+              <h1>How does it work?</h1>
               <ul>
-                <li>1. Discovery call</li>
-                <li>2. Bookkeeping Analisys</li>
+                <li>1. Free Consultation call</li>
+                <li>2. Free Bookkeeping Analysis</li>
                 <li>3. Plan of Action</li>
                 <li>4. Make it Official</li>
                 <li>5. Launch!</li>
@@ -173,14 +260,13 @@ function Home() {
         </section>
 
         {/* Pricing */}
-        <section id="pricing">
+        {/* <section id="pricing">
           <div className="text">
             <h3>Pricing</h3>
             <h1>Perfect plan for every business</h1>
           </div>
           <div className="grid-layout">
 
-            {/* Plan 1 */}
             <div class="plan __fav">
               <div class="desc">
                 <div class="best">
@@ -217,11 +303,9 @@ function Home() {
               </div>
             </div>
 
-            {/* Plan 2 */}
             <div className="plan">
               <div className="desc">
                 <div className="best">
-                  <p>None</p>
                 </div>
                 <h2>CFO</h2>
                 <p>
@@ -238,8 +322,6 @@ function Home() {
               </div>
             </div>
 
-
-            {/* Plan 3 */}
             <div className="plan">
               <div className="desc">
                 <div className="best">
@@ -286,14 +368,13 @@ function Home() {
                 </div>
               </div>
               <div className="price">
-                {/* <h2>$357 /месяц</h2> */}
+                <h2>$357 /месяц</h2>
                 <div className="button">
                   <a href="#pre-call" onClick={scrollToPreCall} >Book a Call</a>
                 </div>
               </div>
             </div>
 
-            {/* Plan 4 */}
             <div className="plan">
               <div className="desc">
                 <div className="best">
@@ -346,14 +427,13 @@ function Home() {
                 </div>
               </div>
               <div className="price">
-                {/* <h2>$672 /месяц</h2> */}
+                <h2>$672 /месяц</h2>
                 <div className="button">
                   <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
 
-            {/* Plan 5 */}
             <div className="plan">
               <div className="desc">
                 <div className="best">
@@ -413,14 +493,13 @@ function Home() {
                 </div>
               </div>
               <div className="price">
-                {/* <h2>$1,350 /месяц</h2> */}
+                <h2>$1,350 /месяц</h2>
                 <div className="button">
                   <a href="#pre-call" onClick={scrollToPreCall}>Book a Call</a>
                 </div>
               </div>
             </div>
 
-            {/* Plan 6 */}
             <div class="plan __fav">
               <div class="desc">
                 <div class="best">
@@ -457,16 +536,15 @@ function Home() {
               </div>
             </div>
           </div>
-
-        </section>
+        </section> */}
 
         {/* Booking Section */}
         <section>
           <div id="pre-call"></div>
           <div id="call" className="flex-center">
             <div className="text">
-              <h3>Booking</h3>
-              <h1>Book a call right now</h1>
+              <h3>Free Consultation</h3>
+              <h1>Schedule my free consultation right now</h1>
             </div>
             <div className="calendly-inline-widget" data-url="https://calendly.com/go4profit-us/discoverycall" style={{ minWidth: '320px', height: '700px' }}></div>
           </div>
@@ -485,7 +563,7 @@ function Home() {
               <li>6500 River Place Blvd Building 7, Austin, TX 78730</li>
             </ul>
           </div>
-          <p>Copyright © 2023 Go4Profit | All rights reserved</p>
+          <p>Copyright © 2024 Go4Profit | All rights reserved</p>
         </footer>
       </main>
     </div >
