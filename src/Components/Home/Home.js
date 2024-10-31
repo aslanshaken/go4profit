@@ -14,8 +14,8 @@ import plaidLogo from '../../assets/logos/plaid.png';
 import squareLogo from '../../assets/logos/square.png';
 import stripeLogo from '../../assets/logos/stripe.png';
 import quickbooksLogo from '../../assets/logos/quickbooks.png';
-import spotifyLogo from '../../assets/logos/spotify.png';
-import family from '../../assets/about/family.jpg'
+// import spotifyLogo from '../../assets/logos/spotify.png';
+// import family from '../../assets/about/family.jpg'
 
 // Service icons
 import serviceAnalysis from '../../assets/services/service-analysis.svg';
@@ -62,7 +62,7 @@ function Home() {
       imageUrl: Seka,
       name: 'Serik Baimoldayev',
       role: 'CEO, Example Co.',
-      text: '"Go4Profit transformed our financial management! The dedicated expert we were assigned made sure we understood our reports clearly, and now we know exactly where to focus to grow our business."',
+      text: '"Working with Go4Profit for the last 3 years has been a game-changer. They helped us automate our finances and totally rethink how we manage them. Now we know exactly where to focus to keep growing the business."',
     },
     {
       id: 2,
@@ -126,7 +126,7 @@ function Home() {
           </header>
           <div className="image">
             <div className="image-container">
-              <img src={family} alt="Hero" />
+              <img src={heroImage} alt="Hero" />
             </div>
           </div>
         </section>
@@ -218,7 +218,7 @@ function Home() {
                 </li>
                 <br />
                 <li>
-                  <strong>Real-Time Tracking:</strong> See your income and expenses anytime with up-to-date financials software.
+                  <strong>Client Portal:</strong>You'll have access to a client portal where you can view and download reports, ask questions, respond to ours, track progress, and more—all in one spot.
                 </li>
                 <br />
                 <li>
@@ -227,7 +227,7 @@ function Home() {
               </ul>
             </div>
             <div className="expect-image">
-              <img src={heroImage} alt="About Us" />
+              <img src={aboutImage} alt="About Us" />
             </div>
           </div>
 
