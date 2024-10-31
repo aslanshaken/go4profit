@@ -62,21 +62,21 @@ function Home() {
       imageUrl: Seka,
       name: 'Serik Baimoldayev',
       role: 'CEO, Example Co.',
-      text: '"Working with Go4Profit for the last 3 years has been a game-changer. They helped us automate our finances and totally rethink how we manage them. Now we know exactly where to focus to keep growing the business."',
+      text: 'Working with Go4Profit for the last 3 years has been a game-changer. They helped us automate our finances and totally rethink how we manage them. Now we know exactly where to focus to keep growing the business.',
     },
     {
       id: 2,
       imageUrl: Whizz,
       name: 'Alex Mironov',
       role: 'Marketing Director, Sample Inc.',
-      text: '"Their monthly financial reviews helped us spot areas where we were losing money. Thanks to their clear explanations, we’ve optimized our expenses and improved our bottom line. Highly recommended!"',
+      text: 'Their monthly financial reviews helped us spot areas where we were losing money. Thanks to their clear explanations, we’ve optimized our expenses and improved our bottom line. Highly recommended!',
     },
     {
       id: 3,
       imageUrl: Ferla,
       name: 'Feras Bashnak',
       role: 'Developer, Tech Solutions',
-      text: '"I was amazed by how easy they made bookkeeping for us. Their team was always available to walk us through everything from daily payment categorization to tax prep. We’re in good hands!"',
+      text: 'I was really impressed with how easy they made bookkeeping for us. Their team was always there to help with everything—from sorting daily payments to getting ready for tax season. They’re truly care about helping us succeed.',
     },
   ];
 
@@ -218,7 +218,7 @@ function Home() {
                 </li>
                 <br />
                 <li>
-                  <strong>Client Portal:</strong>You'll have access to a client portal where you can view and download reports, ask questions, respond to ours, track progress, and more—all in one spot.
+                  <strong>Client Portal:</strong> You'll have access to a client portal where you can view and download reports, ask questions, respond to ours, track progress, and more—all in one spot.
                 </li>
                 <br />
                 <li>
