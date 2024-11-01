@@ -8,7 +8,10 @@ import howtoImage from '../../assets/howto/howto-section.svg';
 
 // Trust logos
 import billLogo from '../../assets/logos/bill.png';
-import shopifyLogo from '../../assets/logos/shopify.png';
+// import shopifyLogo from '../../assets/logos/shopify.png';
+import smartMoving from '../../assets/logos/SmartMoving.png'
+import adp from '../../assets/logos/adp.png'
+// import uniqtms from '../../assets/logos/uniqtms.jpg'
 import gustoLogo from '../../assets/logos/gusto.png';
 import plaidLogo from '../../assets/logos/plaid.png';
 import squareLogo from '../../assets/logos/square.png';
@@ -76,7 +79,7 @@ function Home() {
       imageUrl: Ferla,
       name: 'Feras Bashnak',
       role: 'Developer, Tech Solutions',
-      text: 'I was really impressed with how easy they made bookkeeping for us. Their team was always there to help with everything—from sorting daily payments to getting ready for tax season. They’re truly care about helping us succeed.',
+      text: 'I was impressed with how easy they made bookkeeping for us. Their team was always there to help with everything—from sorting daily payments to getting ready for tax season. They’re truly care about helping us succeed.',
     },
   ];
 
@@ -136,7 +139,7 @@ function Home() {
           <h2 style={{ marginBottom: '1.5rem', fontWeight: 'bolder' }}>We work with the top software solutions in the industry</h2>
           <div className="carousel-container">
             <div className="carousel">
-              {[billLogo, shopifyLogo, gustoLogo, plaidLogo, squareLogo, stripeLogo, quickbooksLogo].map((logo, index) => (
+              {[billLogo, gustoLogo, plaidLogo, squareLogo, stripeLogo, quickbooksLogo, smartMoving, adp].map((logo, index) => (
                 <img key={index} src={logo} alt={`Logo ${index + 1}`} />
               ))}
             </div>
@@ -560,7 +563,7 @@ function Home() {
             <ul>
               <li>info@go4profit.us</li>
               <li>+1(917) 200-7609</li>
-              <li>6500 River Place Blvd Building 7, Austin, TX 78730</li>
+              {/* <li>6500 River Place Blvd Building 7, Austin, TX 78730</li> */}
             </ul>
           </div>
           <p>Copyright © 2024 Go4Profit | All rights reserved</p>
