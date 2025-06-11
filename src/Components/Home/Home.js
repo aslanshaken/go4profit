@@ -60,13 +60,13 @@ function Home() {
   // };
 
   const testimonials = [
-    {
-      id: 1,
-      imageUrl: Seka,
-      name: 'Serik Baimoldayev',
-      role: 'CEO, Example Co.',
-      text: 'Working with Go4Profit for the last 3 years has been a game-changer. They helped us automate our finances and totally rethink how we manage them. Now we know exactly where to focus to keep growing the business.',
-    },
+    // {
+    //   id: 1,
+    //   imageUrl: Seka,
+    //   name: 'Serik Baimoldayev',
+    //   role: 'CEO, Example Co.',
+    //   text: 'Working with Go4Profit for the last 3 years has been a game-changer. They helped us automate our finances and totally rethink how we manage them. Now we know exactly where to focus to keep growing the business.',
+    // },
     {
       id: 2,
       imageUrl: Whizz,
