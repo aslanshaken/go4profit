@@ -224,7 +224,10 @@ function Home() {
         {/* About Section */}
         <section id="about" className="flex_center">
           <div className='expect-container'>
+
             <ul>
+              <h3>What You Can Expect</h3>
+              <h1 style={{ marginBottom: '1em' }}>Personal Support. Experts. Always Available. </h1>
               <li>
                 <strong>Full Cycle of Bookkeeping:</strong> We manage daily payments, categorize expenses, send invoices, track payments, and perform monthly bank reconciliations for accuracy.
               </li>
