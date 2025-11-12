@@ -465,7 +465,7 @@ function Home() {
               <h3>Free Consultation</h3>
               <h1>Schedule my free consultation right now</h1>
             </div>
-            <div className="calendly-inline-widget" data-url="https://calendly.com/go4profit-us/discoverycall" style={{ minWidth: '320px', height: '700px' }}></div>
+              <div className="calendly-inline-widget" data-url="https://calendly.com/go4profit-llc/30min" style={{ minWidth: '320px', height: '700px' }}></div>
           </div>
 
         </section>
