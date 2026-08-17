@@ -563,7 +563,8 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  max-width: 1080px;
+  max-width: 860px;
+  margin-inline: auto;
 }
 .truck-card { padding: 20px 22px; }
 .truck-card h3 {
@@ -822,9 +823,6 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   align-items: start;
 }
 .book-intro { min-width: 0; }
-.book-lead { margin: 0 0 20px; max-width: 46ch; }
-.book-contact { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
-.book-open-link { display: none; }
 .book-calendar { min-width: 0; }
 .calendly-frame {
   min-height: 720px;
@@ -837,18 +835,6 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   margin-top: 16px;
   font-size: 15px;
 }
-
-.mobile-cta {
-  display: none;
-  position: sticky;
-  bottom: 0;
-  z-index: 15;
-  padding: 12px var(--page-pad) calc(12px + env(safe-area-inset-bottom));
-  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
-  border-top: 1px solid var(--color-divider);
-  backdrop-filter: blur(8px);
-}
-.mobile-cta .btn { width: 100%; }
 
 .not-found { padding: 96px 0 120px; max-width: 40ch; }
 .not-found h1 { font-size: clamp(48px, 6vw, 80px); margin: 0 0 16px; }
@@ -902,6 +888,17 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   }
   .hero-copy { order: 1; }
   .hero-visual { order: 2; }
+  .hero h1 { text-align: center; }
+  .hero-note {
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .truck-compare {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 860px) {
@@ -928,11 +925,8 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   .card-grid-3 { grid-template-columns: 1fr; }
   .testi-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: clamp(36px, 11vw, 56px); }
-  .mobile-cta { display: block; }
-  .truck-compare { grid-template-columns: 1fr; max-width: 400px; }
   .faq details p { margin-left: 0; }
   .book-layout { grid-template-columns: 1fr; gap: 28px; }
-  .book-open-link { display: inline-flex; width: 100%; }
 }
 
 @media (max-width: 640px) {
@@ -943,7 +937,6 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   .field-list span { font-size: 18px; }
   .book-page { padding: 28px 0 64px; }
   .book-layout { grid-template-columns: 1fr; gap: 28px; }
-  .book-open-link { display: inline-flex; width: 100%; }
   .calendly-frame {
     min-height: 980px;
     height: 980px;

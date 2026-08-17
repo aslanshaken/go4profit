@@ -59,9 +59,6 @@ function Home() {
           <Faq />
         </div>
         <Close />
-        <div className="mobile-cta">
-          <Button to="/book">Get a free consultation</Button>
-        </div>
       </main>
       <SiteFooter />
       <JsonLd />
@@ -86,12 +83,9 @@ function Hero() {
         </p>
         <div className="hero-actions">
           <Button to="/book">Get a free consultation</Button>
-          <Button href="#numbers" variant="secondary">
-            See the numbers
-          </Button>
         </div>
         <p className="hero-note">
-          Owner-operators · Small fleets · Growing fleets · Established fleets
+          Owner-operators · Growing fleets · Established fleets
         </p>
       </div>
       <div className="hero-visual">

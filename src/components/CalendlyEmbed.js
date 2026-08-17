@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { CALENDLY_URL } from '../site';
 
+const EMBED_URL = `${CALENDLY_URL}?hide_gdpr_banner=1`;
+
 function loadCalendlyScript() {
   return new Promise((resolve) => {
     if (window.Calendly) {
@@ -10,7 +12,8 @@ function loadCalendlyScript() {
 
     const existing = document.querySelector('script[data-calendly]');
     if (existing) {
-      existing.addEventListener('load', () => resolve(window.Calendly), { once: true });
+      if (window.Calendly) resolve(window.Calendly);
+      else existing.addEventListener('load', () => resolve(window.Calendly), { once: true });
       return;
     }
 
@@ -31,8 +34,12 @@ function CalendlyEmbed({ title = 'Schedule a free consultation' }) {
     let cancelled = false;
 
     loadCalendlyScript().then((calendly) => {
-      if (cancelled || !calendly || !hostRef.current) return;
-      calendly.initInlineWidgets();
+      if (cancelled || !calendly?.initInlineWidget || !hostRef.current) return;
+      hostRef.current.innerHTML = '';
+      calendly.initInlineWidget({
+        url: EMBED_URL,
+        parentElement: hostRef.current,
+      });
     });
 
     return () => {
@@ -44,8 +51,7 @@ function CalendlyEmbed({ title = 'Schedule a free consultation' }) {
     <div>
       <div
         ref={hostRef}
-        className="calendly-inline-widget calendly-frame"
-        data-url={`${CALENDLY_URL}?hide_gdpr_banner=1`}
+        className="calendly-frame"
         role="region"
         aria-label={title}
       />
