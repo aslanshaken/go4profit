@@ -416,18 +416,10 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 }
 .hub-line.in { stroke: #79cba3; }
 .hub-line.out { stroke: var(--color-accent-600); }
-.hub-bead {
-  offset-rotate: 0deg;
-  animation: hub-bead 4.6s linear infinite;
-}
 .hub-bead.in { fill: #3fa87c; }
 .hub-bead.out { fill: var(--color-accent-700); }
 @keyframes hub-dash {
   to { stroke-dashoffset: -18; }
-}
-@keyframes hub-bead {
-  from { offset-distance: 0%; }
-  to { offset-distance: 100%; }
 }
 .hub-col,
 .hub-core { position: relative; z-index: 1; }
@@ -825,6 +817,7 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 
 @media (max-width: 1200px) {
   .card-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hub-lines { display: none; }
   .hub-panel { padding: 20px 16px 24px; }
   .hub {
     display: flex;
@@ -929,7 +922,7 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hub-flow span { animation: none !important; }
-  .hub-line,
-  .hub-bead { animation: none !important; }
+  .hub-line { animation: none !important; }
+  .hub-bead { display: none; }
   .marquee { animation: none; }
 }

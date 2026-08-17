@@ -75,22 +75,22 @@ function PlatformHub() {
             </defs>
             {lines.left.map((d, index) => (
               <g key={`in-${index}`}>
-                <path d={d} className="hub-line in" markerEnd="url(#hub-arrow-in)" />
-                <circle
-                  r="3.5"
-                  className="hub-bead in"
-                  style={{ offsetPath: `path('${d}')`, animationDelay: `${index * 0.45}s` }}
-                />
+                <path id={`hub-in-${index}`} d={d} className="hub-line in" markerEnd="url(#hub-arrow-in)" />
+                <circle r="3.5" className="hub-bead in">
+                  <animateMotion dur="4.6s" repeatCount="indefinite" begin={`${index * 0.45}s`}>
+                    <mpath href={`#hub-in-${index}`} />
+                  </animateMotion>
+                </circle>
               </g>
             ))}
             {lines.right.map((d, index) => (
               <g key={`out-${index}`}>
-                <path d={d} className="hub-line out" markerEnd="url(#hub-arrow-out)" />
-                <circle
-                  r="3.5"
-                  className="hub-bead out"
-                  style={{ offsetPath: `path('${d}')`, animationDelay: `${index * 0.45}s` }}
-                />
+                <path id={`hub-out-${index}`} d={d} className="hub-line out" markerEnd="url(#hub-arrow-out)" />
+                <circle r="3.5" className="hub-bead out">
+                  <animateMotion dur="4.6s" repeatCount="indefinite" begin={`${index * 0.45}s`}>
+                    <mpath href={`#hub-out-${index}`} />
+                  </animateMotion>
+                </circle>
               </g>
             ))}
           </svg>
