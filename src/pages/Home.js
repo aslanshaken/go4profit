@@ -213,24 +213,19 @@ function Proof() {
       <span className="kicker">05 · Trusted by trucking businesses</span>
       <hr className="rule" />
       <h2 id="proof-title" className="visually-hidden">
-        Client feedback
+        Client reviews
       </h2>
       <div className="testi-grid" style={{ marginTop: 0 }}>
         {TESTIMONIALS.map((item) => (
           <Blueprint className="testi-card" as="figure" key={item.name}>
+            <div className="testi-meta">
+              <span className="testi-stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </span>
+              <span className="testi-badge">Trusted client</span>
+            </div>
             <p className="muted">{item.quote}</p>
-            <figcaption
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontWeight: 700,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                fontSize: 13,
-                color: 'var(--color-accent-800)',
-              }}
-            >
-              {item.name}
-            </figcaption>
+            <figcaption>{item.name}</figcaption>
           </Blueprint>
         ))}
       </div>
@@ -284,6 +279,9 @@ function Close() {
     <section id="book" className="field-band" style={{ padding: '52px 0' }} aria-labelledby="close-title">
       <div className="close-inner">
         <div className="close-copy">
+          <p className="close-brand" data-wordmark="go4profit">
+            Go4Profit
+          </p>
           <h2 id="close-title" className="display">
             Run your fleet. We&apos;ll run the numbers.
           </h2>

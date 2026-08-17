@@ -677,7 +677,36 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   margin-top: 28px;
 }
 .testi-card { padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.testi-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.testi-stars {
+  color: var(--color-accent-600);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+.testi-badge {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+}
 .testi-card p { margin: 0; font-size: 16px; line-height: 1.45; }
+.testi-card figcaption {
+  margin-top: auto;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--color-accent-800);
+}
 
 .step {
   display: flex;
@@ -716,6 +745,16 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   gap: 24px clamp(32px, 4vw, 64px);
 }
 .close-copy { display: flex; flex-direction: column; gap: 10px; min-width: min(100%, 420px); flex: 1; }
+.close-brand {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent-2-500);
+  line-height: 1;
+}
 .close-copy h2 { font-size: clamp(32px, 3.6vw, 52px); line-height: 1.02; }
 .close-sub {
   margin: 0;
@@ -755,6 +794,7 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   margin: 0 auto;
   padding: 16px var(--page-pad) 20px;
   font-size: 13px;
+  text-align: center;
   color: color-mix(in srgb, var(--color-text) 68%, transparent);
 }
 

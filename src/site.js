@@ -150,19 +150,19 @@ export const INTEGRATIONS = [
 
 export const TESTIMONIALS = [
   {
-    name: 'Nikita Glazkov',
+    name: 'Sultan Trans',
     quote:
-      'This is exactly what you need if you are in the trucking business. They will help you break down your income and expenses clearly, and guide your company to the next level.',
+      'When Go4Profit came in, our books were pretty messy and needed a lot of cleanup. They went back, fixed the issues, got everything reconciled, and put a proper process in place. Since then, they\'ve been handling our monthly bookkeeping and everything has been much more organized.',
   },
   {
-    name: 'Feras Bashnak',
+    name: 'JTI',
     quote:
-      'I was impressed with how easy they made bookkeeping for us. Their team was always there to help with everything — from sorting daily payments to getting ready for tax season.',
+      'What I like about Go4Profit is that they don\'t just send us financial statements and move on. They help us understand the numbers behind the business — cost per mile, revenue per mile, cash flow, and profitability. It gives us a much better idea of where we\'re doing well and where we need to improve.',
   },
   {
-    name: 'Bauer Altynbek',
+    name: 'Manas Express',
     quote:
-      'We recently worked with Go4Profit and Ainur for our company bookkeeping needs, and I couldn\'t be more impressed. From start to finish, their professionalism and efficiency were outstanding.',
+      'Go4Profit has made the accounting side of our business much easier. Our books are kept up to date, the monthly reports are clear, and when we have questions, their team is easy to reach. It\'s nice to actually know where the business stands financially each month.',
   },
 ];
 
