@@ -726,19 +726,7 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   text-transform: uppercase;
   color: var(--color-accent-2-500);
 }
-.close-serve {
-  margin: 4px 0 0;
-  font-size: 15px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-field-ink) 72%, transparent);
-}
 .close-side { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; min-width: min(100%, 280px); }
-.close-side .hint {
-  font-size: 15.5px;
-  max-width: 44ch;
-  color: color-mix(in srgb, var(--color-field-ink) 74%, transparent);
-}
 .contact-lines {
   display: flex;
   flex-direction: column;
@@ -765,21 +753,9 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 .site-footer {
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: 32px var(--page-pad) 48px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
+  padding: 16px var(--page-pad) 20px;
   font-size: 13px;
   color: color-mix(in srgb, var(--color-text) 68%, transparent);
-}
-.site-footer strong {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-accent-800);
 }
 
 .book-page { padding: 48px 0 80px; overflow-x: hidden; }

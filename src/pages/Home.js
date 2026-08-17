@@ -290,17 +290,11 @@ function Close() {
           <p className="close-sub">
             Bookkeeping · Tax · IFTA · Payroll · Settlements · Cost per mile · CFO reporting
           </p>
-          <p className="close-serve">
-            Serving dry van, reefer, flatbed, car hauling, drayage, dedicated, and last-mile fleets.
-          </p>
         </div>
         <div className="close-side">
           <Button to="/book" variant="lime">
             Get a free consultation
           </Button>
-          <span className="hint">
-            Tell us how many trucks you operate and we&apos;ll show you what your finance function could look like.
-          </span>
           <div className="contact-lines">
             <a href={CONTACT.mapsUrl} target="_blank" rel="noreferrer">
               <PinIcon />
