@@ -14,6 +14,8 @@ Create React App + React Router. Copy, contact, Calendly, and section data live 
 
 Homepage sections: Services, Numbers, Onboarding, FAQ. Nav CTAs and “Free consultation” go to `/book`.
 
+SEO titles, descriptions, and keywords live in `src/site.js`. `public/sitemap.xml` and `public/robots.txt` point crawlers at `https://go4profit.us`.
+
 ## Local development
 
 ```bash

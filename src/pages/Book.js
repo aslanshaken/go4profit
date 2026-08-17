@@ -2,15 +2,14 @@ import { useEffect } from 'react';
 import CalendlyEmbed from '../components/CalendlyEmbed';
 import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
+import { usePageMeta } from '../seo';
 import { CALENDLY_URL } from '../site';
 
 function Book() {
+  usePageMeta('book');
+
   useEffect(() => {
-    document.title = 'Book a free consultation — Go4Profit';
     window.scrollTo(0, 0);
-    return () => {
-      document.title = 'Go4Profit — AI-native accounting for trucking';
-    };
   }, []);
 
   return (

@@ -1,8 +1,10 @@
 import Button from '../components/Button';
 import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
+import { usePageMeta } from '../seo';
 
 function NotFound() {
+  usePageMeta('notFound');
   return (
     <div className="page-wrap">
       <SiteNav />

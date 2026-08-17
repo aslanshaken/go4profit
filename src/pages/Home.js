@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import LogoMarquee from '../components/LogoMarquee';
 import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
+import { JsonLd, usePageMeta } from '../seo';
 import {
   AUDIENCES,
   CONTACT,
@@ -29,6 +30,7 @@ function scrollToHash() {
 
 function Home() {
   const navigate = useNavigate();
+  usePageMeta('home');
 
   useEffect(() => {
     const raw = window.location.hash.replace('#', '');
@@ -69,6 +71,7 @@ function Home() {
         </div>
       </main>
       <SiteFooter />
+      <JsonLd />
     </div>
   );
 }
@@ -102,7 +105,7 @@ function Hero() {
         <Blueprint className="duotone hero-photo" as="figure">
           <img
             src="/images/hero-fleet.png"
-            alt="A row of modern white trucks in a clean warehouse"
+            alt="Trucking fleet Go4Profit accounts for — cost per mile and profit by truck"
             width="1200"
             height="675"
           />
@@ -305,7 +308,7 @@ function Audiences() {
         <Blueprint className="duotone" as="figure">
           <img
             src="/images/truck-detail.png"
-            alt="Close three-quarter view of a new tractor"
+            alt="Tractor unit used in Go4Profit fleet accounting and cost-per-mile reporting"
             width="1200"
             height="750"
             style={{ aspectRatio: '16 / 10', objectFit: 'cover' }}

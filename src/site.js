@@ -1,10 +1,52 @@
 export const CALENDLY_URL = 'https://calendly.com/synoro-ai/30min';
+export const SITE_URL = 'https://go4profit.us';
 
 export const CONTACT = {
   email: 'info@go4profit.us',
   address: '1655 S Blue Island Ave #559, Chicago, IL 60608',
   mapsUrl:
     'https://www.google.com/maps/search/?api=1&query=1655+S+Blue+Island+Ave+%23559+Chicago+IL+60608',
+};
+
+export const KEYWORDS = [
+  'trucking accounting',
+  'trucking bookkeeping',
+  'fleet accounting',
+  'IFTA reporting',
+  'Form 2290',
+  'HVUT',
+  'cost per mile',
+  'profit by truck',
+  'revenue per mile',
+  'trucking payroll',
+  'driver settlements',
+  'trucking tax',
+  'owner-operator accountant',
+  'fleet CFO',
+  'QuickBooks for trucking',
+  'trucking catch-up bookkeeping',
+  'Chicago trucking accountant',
+].join(', ');
+
+export const SEO = {
+  home: {
+    title: 'Trucking Accounting, IFTA & Cost Per Mile | Go4Profit',
+    description:
+      'Go4Profit is trucking accounting for fleets: bookkeeping, IFTA, Form 2290, payroll, settlements, and cost-per-mile reporting. See profit by truck — not just a company P&L.',
+    path: '/',
+  },
+  book: {
+    title: 'Book a Free Trucking Accounting Consultation | Go4Profit',
+    description:
+      'Book a free 30-minute consultation with Go4Profit. Talk IFTA, settlements, payroll, taxes, or cost per mile for your trucking company. No prep required.',
+    path: '/book',
+  },
+  notFound: {
+    title: 'Page not found | Go4Profit',
+    description: 'This Go4Profit page is missing. Return home or book a free trucking accounting consultation.',
+    path: '/',
+    robots: 'noindex, follow',
+  },
 };
 
 export const NAV_LINKS = [
