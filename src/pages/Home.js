@@ -3,20 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import Blueprint from '../components/Blueprint';
 import Button from '../components/Button';
 import LogoMarquee from '../components/LogoMarquee';
+import PlatformHub from '../components/PlatformHub';
 import SiteFooter from '../components/SiteFooter';
 import SiteNav from '../components/SiteNav';
 import { JsonLd, usePageMeta } from '../seo';
 import {
-  AUDIENCES,
   CONTACT,
-  DASHBOARD,
   FAQS,
-  METRICS,
-  PLATFORM,
-  SAMPLE_TRUCKS,
   SERVICES,
   STEPS,
   TESTIMONIALS,
+  TRUCK_SAMPLES,
 } from '../site';
 
 const BOOK_HASHES = new Set(['pre-call', 'call', 'book-calendar', 'book', 'close']);
@@ -52,15 +49,11 @@ function Home() {
       <main id="main">
         <div className="page-inner">
           <Hero />
+          <Integrations />
           <Why />
           <Services />
           <Numbers />
-        </div>
-        <CfoBand />
-        <div className="page-inner">
           <Platform />
-          <Audiences />
-          <Integrations />
           <Proof />
           <Process />
           <Faq />
@@ -89,7 +82,7 @@ function Hero() {
           Know what every truck earns. Know what every mile costs. Know where your cash is going.
         </p>
         <p className="muted" style={{ margin: 0 }}>
-          Go4Profit combines <strong>our own trucking finance software with real trucking accountants</strong> to handle your bookkeeping, tax, payroll, IFTA, settlements, and financial reporting — while turning your fleet data into numbers you can actually use.
+          Go4Profit combines <mark className="word-mark">our own trucking finance software with real trucking accountants</mark> to handle your bookkeeping, tax, payroll, IFTA, settlements, and financial reporting — while turning your fleet data into numbers you can actually use.
         </p>
         <div className="hero-actions">
           <Button to="/book">Get a free consultation</Button>
@@ -98,7 +91,7 @@ function Hero() {
           </Button>
         </div>
         <p className="hero-note">
-          Built for owner-operators, growing fleets, and established trucking companies
+          Owner-operators · Small fleets · Growing fleets · Established fleets
         </p>
       </div>
       <div className="hero-visual">
@@ -110,48 +103,8 @@ function Hero() {
             height="675"
           />
         </Blueprint>
-        <Blueprint className="sample" as="figure">
-          <div className="sample-kpis">
-            <div>
-              <span className="kpi-label">Cost / mile</span>
-              <span className="kpi-value">$1.86</span>
-            </div>
-            <div>
-              <span className="kpi-label">Revenue / mile</span>
-              <span className="kpi-value">$2.41</span>
-            </div>
-            <div>
-              <span className="kpi-label">Gross margin</span>
-              <span className="kpi-value accent">21%</span>
-            </div>
-          </div>
-          <div className="bars">
-            <span className="kpi-label" style={{ minHeight: 0 }}>
-              Net profit by truck, last week
-            </span>
-            <div className="bar-grid">
-              {SAMPLE_TRUCKS.map((truck) => (
-                <FragmentRow key={truck.id} truck={truck} />
-              ))}
-            </div>
-          </div>
-        </Blueprint>
       </div>
     </section>
-  );
-}
-
-function FragmentRow({ truck }) {
-  return (
-    <>
-      <span>{truck.id}</span>
-      <span
-        className={`bar${truck.loss ? ' loss' : ''}`}
-        style={{ '--w': truck.width }}
-        aria-hidden="true"
-      />
-      <span className={truck.loss ? 'muted-2' : undefined}>{truck.amount}</span>
-    </>
   );
 }
 
@@ -159,17 +112,35 @@ function Why() {
   return (
     <section className="section" aria-labelledby="why-title">
       <Blueprint className="why-panel">
-        <span className="kicker">01 · Why traditional accounting falls short</span>
+        <span className="kicker">01 · Accounting built specifically for trucking</span>
         <div className="why-copy">
           <h2 id="why-title" className="display why-title">
-            Traditional accounting wasn&apos;t built for trucking
+            We don&apos;t just do accounting. We understand trucking.
           </h2>
           <p className="muted why-body">
-            Trucking runs on more than revenue and expenses. Every load, mile, gallon of fuel, driver settlement, factoring fee, repair, and truck payment affects your bottom line differently.{' '}
-            <mark className="word-mark">Go4Profit</mark> understands how fleets actually operate — connecting the numbers behind your trucks, drivers, and loads so you can see what you&apos;re really making, not just what shows up on a standard P&amp;L.
+            Most accounting firms work across dozens of industries.{' '}
+            <mark className="word-mark">Go4Profit is built around trucking companies.</mark>
+          </p>
+          <p className="muted why-body">
+            We understand fuel, driver pay, settlements, factoring, IFTA, equipment costs, cost per mile, and the financial decisions that come with running a fleet.
+          </p>
+          <p className="muted why-body">
+            That means your books aren&apos;t just accurate —{' '}
+            <strong>they&apos;re organized around how your trucking business actually operates.</strong>
           </p>
         </div>
       </Blueprint>
+    </section>
+  );
+}
+
+function Integrations() {
+  return (
+    <section className="integrations" aria-labelledby="systems-title">
+      <p id="systems-title" className="display integrations-title">
+        We work with the software your fleet already uses
+      </p>
+      <LogoMarquee />
     </section>
   );
 }
@@ -198,79 +169,28 @@ function Services() {
 function Numbers() {
   return (
     <section id="numbers" className="section" aria-labelledby="numbers-title">
-      <span className="kicker">03 · Numbers built for trucking</span>
+      <span className="kicker">03 · Know your numbers</span>
       <hr className="rule" />
       <h2 id="numbers-title" className="display" style={{ fontSize: 'clamp(32px, 4vw, 56px)', marginBottom: 16 }}>
-        Your P&amp;L is only the beginning
+        Your company can be profitable while one of your trucks is losing money.
       </h2>
-      <p className="muted" style={{ margin: '0 0 44px' }}>
-        Go4Profit turns your accounting data into trucking operating metrics — the numbers that tell you which trucks, lanes, and drivers are carrying the business.
+      <p className="muted" style={{ margin: '0 0 44px', maxWidth: '68ch' }}>
+        Go4Profit shows you the numbers behind each truck — cost per mile, revenue per mile, driver cost, fuel, maintenance, and profit — so you know where the business is actually making money.
       </p>
-      <div className="metric-row">
-        {METRICS.map((item) => (
-          <Blueprint className="metric-chip" key={item.title}>
-            <h3>{item.title}</h3>
+      <div className="truck-compare">
+        {TRUCK_SAMPLES.map((truck) => (
+          <Blueprint className={`truck-card${truck.win ? ' win' : ' loss'}`} key={truck.id}>
+            <h3>{truck.id}</h3>
+            <dl>
+              {truck.rows.map((row) => (
+                <div key={row.label}>
+                  <dt>{row.label}</dt>
+                  <dd className={row.label === 'Net profit' ? 'profit' : undefined}>{row.value}</dd>
+                </div>
+              ))}
+            </dl>
           </Blueprint>
         ))}
-      </div>
-      <span
-        style={{
-          display: 'block',
-          marginBottom: 20,
-          fontFamily: 'var(--font-heading)',
-          fontWeight: 700,
-          fontSize: 24,
-          letterSpacing: '0.02em',
-          textTransform: 'uppercase',
-        }}
-      >
-        See the business behind the trucks
-      </span>
-      <Blueprint className="dash">
-        <header className="dash-head">
-          <span>Go4Profit — fleet financial dashboard</span>
-          <span>Period: month-end</span>
-          <span>Sheet 01</span>
-        </header>
-        <div className="dash-grid">
-          {DASHBOARD.map((cell) => (
-            <div className="dash-cell" key={cell.label}>
-              <span className="label">{cell.label}</span>
-              <span className={`value${cell.accent ? ' accent' : ''}`}>{cell.value}</span>
-            </div>
-          ))}
-          <div className="dash-cell" style={{ justifyContent: 'center' }}>
-            <span className="muted" style={{ fontSize: 15.5 }}>
-              One place to understand the financial health of your fleet.
-            </span>
-          </div>
-        </div>
-        <p className="dash-note">
-          Sample figures shown for layout. Your dashboard is populated from your own accounting, payroll, fuel, and settlement data.
-        </p>
-      </Blueprint>
-    </section>
-  );
-}
-
-function CfoBand() {
-  return (
-    <section className="field-band" aria-labelledby="cfo-title">
-      <div className="page-inner split-2" style={{ alignItems: 'center' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <span className="kicker">04 · Your trucking CFO</span>
-          <h2 id="cfo-title" className="display" style={{ fontSize: 'clamp(28px, 3.2vw, 44px)' }}>
-            Don&apos;t just close the books. Use them.
-          </h2>
-          <p className="muted" style={{ margin: 0, fontSize: 17 }}>
-            Cash forecasting, fleet budgeting, equipment decisions, financing analysis, tax strategy, and growth planning.
-          </p>
-        </div>
-        <div className="field-list">
-          <span>Should you buy another truck?</span>
-          <span>Is factoring still worth it?</span>
-          <span>How much cash should you keep?</span>
-        </div>
       </div>
     </section>
   );
@@ -279,112 +199,32 @@ function CfoBand() {
 function Platform() {
   return (
     <section className="section-tight" aria-labelledby="platform-title">
-      <span className="kicker">05 · The Go4Profit platform</span>
+      <span className="kicker">04 · The Go4Profit platform</span>
       <hr className="rule" />
       <h2 id="platform-title" className="display" style={{ fontSize: 'clamp(30px, 3.6vw, 50px)', marginBottom: 16 }}>
-        Built for accounting. Built around your fleet.
+        Your fleet runs on different systems. We bring the numbers together.
       </h2>
-      <p className="muted" style={{ margin: '0 0 44px' }}>
-        You shouldn&apos;t have to replace the systems that already run your business. Go4Profit works across the financial and operational data your fleet already produces — accounting, TMS, ELD, fuel cards, payroll, factoring, banks, and settlements.
+      <p className="muted platform-lead">
+        Your TMS knows the loads. Your ELD knows the miles. Your fuel cards know the fuel. Your payroll knows driver costs. Your bank knows what actually moved.
       </p>
-      <div className="card-grid-3">
-        {PLATFORM.map((item) => (
-          <Blueprint className="bp-card" key={item.title} style={{ padding: 26 }}>
-            <h3>{item.title}</h3>
-            <p className="muted">{item.body}</p>
-          </Blueprint>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Audiences() {
-  return (
-    <section className="section" aria-labelledby="audience-title">
-      <span className="kicker">06 · Built for trucking companies</span>
-      <hr className="rule" />
-      <div className="split-2" style={{ alignItems: 'center', marginBottom: 48 }}>
-        <Blueprint className="duotone" as="figure">
-          <img
-            src="/images/truck-detail.png"
-            alt="Tractor unit used in Go4Profit fleet accounting and cost-per-mile reporting"
-            width="1200"
-            height="750"
-            style={{ aspectRatio: '16 / 10', objectFit: 'cover' }}
-          />
-        </Blueprint>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <p
-            id="audience-title"
-            className="display"
-            style={{ fontSize: 'clamp(24px, 2.6vw, 34px)', lineHeight: 1.1 }}
-          >
-            Every unit on your yard gets its own set of numbers.
-          </p>
-          <p className="muted" style={{ margin: 0, fontSize: 17, maxWidth: '46ch' }}>
-            Whether you run one truck or fifty, the reporting is built the same way — revenue, cost per mile, driver pay, fuel, and maintenance tracked per unit, so the newest truck&apos;s payment is measured against what it actually earns.{' '}
-            <mark className="word-mark">Serving dry van, reefer, flatbed, car hauling, drayage, dedicated, and last-mile fleets.</mark>
-          </p>
-        </div>
-      </div>
-      <div className="card-grid-4">
-        {AUDIENCES.map((item) => (
-          <Blueprint className="bp-card" key={item.title} style={{ padding: 20 }}>
-            <h3 style={{ fontSize: 20 }}>{item.title}</h3>
-            <p className="muted" style={{ fontSize: 15.5 }}>
-              {item.body}
-            </p>
-          </Blueprint>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Integrations() {
-  return (
-    <section className="section" aria-labelledby="systems-title">
-      <span className="kicker">07 · Your systems. One financial picture.</span>
-      <hr className="rule" />
-      <p
-        id="systems-title"
-        style={{
-          margin: '0 0 32px',
-          fontFamily: 'var(--font-heading)',
-          fontWeight: 600,
-          fontSize: 22,
-          letterSpacing: '0.02em',
-          textTransform: 'uppercase',
-        }}
-      >
-        Your fleet already produces the data. Go4Profit brings it together.
+      <p className="muted platform-lead">
+        <mark className="word-mark">Go4Profit brings it together into one financial picture.</mark>
       </p>
-      <LogoMarquee />
-      <p className="muted" style={{ margin: '24px 0 0', fontSize: 17 }}>
-        Don&apos;t see yours? We can also work with exports, statements, spreadsheets, and other platforms your fleet already uses.
-      </p>
+      <PlatformHub />
     </section>
   );
 }
 
 function Proof() {
-  const featured = TESTIMONIALS[0];
-  const rest = TESTIMONIALS.slice(1);
-
   return (
     <section className="section" aria-labelledby="proof-title">
-      <span className="kicker">08 · Trusted by trucking businesses</span>
+      <span className="kicker">05 · Trusted by trucking businesses</span>
       <hr className="rule" />
       <h2 id="proof-title" className="visually-hidden">
         Client feedback
       </h2>
-      <Blueprint className="quote-card" as="figure">
-        <blockquote>{featured.quote}</blockquote>
-        <figcaption>{featured.name}</figcaption>
-      </Blueprint>
-      <div className="testi-grid">
-        {rest.map((item) => (
+      <div className="testi-grid" style={{ marginTop: 0 }}>
+        {TESTIMONIALS.map((item) => (
           <Blueprint className="testi-card" as="figure" key={item.name}>
             <p className="muted">{item.quote}</p>
             <figcaption
@@ -409,12 +249,12 @@ function Proof() {
 function Process() {
   return (
     <section id="process" className="section" aria-labelledby="process-title">
-      <span className="kicker">09 · Switching accountants shouldn&apos;t be painful</span>
+      <span className="kicker">06 · Switching accountants shouldn&apos;t be painful</span>
       <hr className="rule" />
       <h2 id="process-title" className="visually-hidden">
         Onboarding
       </h2>
-      <div className="card-grid-4">
+      <div className="card-grid-3">
         {STEPS.map((step) => (
           <div className="step" key={step.n}>
             <span className="step-n">{step.n}</span>
@@ -432,7 +272,7 @@ function Process() {
 function Faq() {
   return (
     <section id="faq" className="section" style={{ paddingBottom: 88 }} aria-labelledby="faq-title">
-      <span className="kicker">10 · Frequently asked</span>
+      <span className="kicker">07 · Frequently asked</span>
       <hr className="rule" />
       <h2 id="faq-title" className="visually-hidden">
         Frequently asked questions
@@ -482,6 +322,9 @@ function Close() {
           </h2>
           <p className="close-sub">
             Bookkeeping · Tax · IFTA · Payroll · Settlements · Cost per mile · CFO reporting
+          </p>
+          <p className="close-serve">
+            Serving dry van, reefer, flatbed, car hauling, drayage, dedicated, and last-mile fleets.
           </p>
         </div>
         <div className="close-side">
