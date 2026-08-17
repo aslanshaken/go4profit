@@ -64,8 +64,6 @@ export function JsonLd() {
       },
       knowsAbout: [
         'Trucking accounting',
-        'IFTA reporting',
-        'Form 2290',
         'Cost per mile',
         'Profit by truck',
         'Driver settlements',

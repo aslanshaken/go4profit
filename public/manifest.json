@@ -1,7 +1,7 @@
 {
   "short_name": "Go4Profit",
   "name": "Go4Profit — trucking accounting",
-  "description": "Trucking accounting, IFTA, payroll, settlements, and cost-per-mile reporting.",
+  "description": "Trucking accounting, payroll, settlements, and cost-per-mile reporting.",
   "icons": [
     {
       "src": "logo.svg",

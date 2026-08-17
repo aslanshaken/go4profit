@@ -12,9 +12,6 @@ export const KEYWORDS = [
   'trucking accounting',
   'trucking bookkeeping',
   'fleet accounting',
-  'IFTA reporting',
-  'Form 2290',
-  'HVUT',
   'cost per mile',
   'profit by truck',
   'revenue per mile',
@@ -30,15 +27,15 @@ export const KEYWORDS = [
 
 export const SEO = {
   home: {
-    title: 'Trucking Accounting, IFTA & Cost Per Mile | Go4Profit',
+    title: 'Trucking Accounting & Cost Per Mile | Go4Profit',
     description:
-      'Go4Profit is trucking accounting for fleets: bookkeeping, IFTA, Form 2290, payroll, settlements, and cost-per-mile reporting. See profit by truck — not just a company P&L.',
+      'Go4Profit is trucking accounting for fleets: bookkeeping, payroll, settlements, and cost-per-mile reporting. See profit by truck — not just a company P&L.',
     path: '/',
   },
   book: {
     title: 'Book a Free Trucking Accounting Consultation | Go4Profit',
     description:
-      'Book a free 30-minute consultation with Go4Profit. Talk IFTA, settlements, payroll, taxes, or cost per mile for your trucking company. No prep required.',
+      'Book a free 30-minute consultation with Go4Profit. Talk settlements, payroll, taxes, or cost per mile for your trucking company. No prep required.',
     path: '/book',
   },
   notFound: {
