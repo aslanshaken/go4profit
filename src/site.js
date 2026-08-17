@@ -53,7 +53,6 @@ export const NAV_LINKS = [
   { href: '/#services', label: 'Services' },
   { href: '/#numbers', label: 'Numbers' },
   { href: '/#process', label: 'Onboarding' },
-  { href: '/#faq', label: 'FAQ' },
 ];
 
 export const SERVICES = [
@@ -185,32 +184,5 @@ export const STEPS = [
     n: '03',
     title: 'We run your finance function',
     body: 'Bookkeeping, reporting, taxes, payroll, and financial guidance — one relationship.',
-  },
-];
-
-export const FAQS = [
-  {
-    q: 'Can you replace my current accountant?',
-    a: 'Depending on the services you need, Go4Profit can handle bookkeeping, reporting, tax, payroll, and advisory through one relationship. On the consultation we map what you already have and what should move over.',
-  },
-  {
-    q: 'Can you clean up old books?',
-    a: 'Yes. We review prior periods, reconcile accounts, fix categorization, and rebuild the foundation before ongoing service. Catch-up is a common start for fleets that are months behind.',
-  },
-  {
-    q: 'Do you handle IFTA and Form 2290?',
-    a: 'Yes. IFTA reporting and Form 2290 / HVUT can be included in the trucking tax and compliance work we do for your fleet.',
-  },
-  {
-    q: 'Can you show profitability by truck?',
-    a: 'When revenue, mileage, and expense data are available, we report cost per mile, revenue per mile, and profit by unit.',
-  },
-  {
-    q: 'Do I have to replace my existing software?',
-    a: 'No. We work with the accounting, TMS, ELD, fuel, payroll, factoring, and bank data your fleet already produces — including exports when a live connection is not available.',
-  },
-  {
-    q: 'How does pricing work?',
-    a: 'Pricing depends on fleet size, volume, whether catch-up is needed, and which services you want. The free consultation is how we size that correctly.',
   },
 ];

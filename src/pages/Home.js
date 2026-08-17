@@ -9,7 +9,6 @@ import SiteNav from '../components/SiteNav';
 import { JsonLd, usePageMeta } from '../seo';
 import {
   CONTACT,
-  FAQS,
   SERVICES,
   STEPS,
   TESTIMONIALS,
@@ -56,7 +55,6 @@ function Home() {
           <Platform />
           <Proof />
           <Process />
-          <Faq />
         </div>
         <Close />
       </main>
@@ -257,31 +255,6 @@ function Process() {
               {step.body}
             </p>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Faq() {
-  return (
-    <section id="faq" className="section" style={{ paddingBottom: 88 }} aria-labelledby="faq-title">
-      <span className="kicker">07 · Frequently asked</span>
-      <hr className="rule" />
-      <h2 id="faq-title" className="visually-hidden">
-        Frequently asked questions
-      </h2>
-      <div className="faq">
-        {FAQS.map((item) => (
-          <details key={item.q}>
-            <summary>
-              <span className="faq-plus" aria-hidden="true">
-                +
-              </span>
-              <span>{item.q}</span>
-            </summary>
-            <p className="muted">{item.a}</p>
-          </details>
         ))}
       </div>
     </section>

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { CONTACT, FAQS, KEYWORDS, SEO, SITE_URL } from './site';
+import { CONTACT, KEYWORDS, SEO, SITE_URL } from './site';
 
 function upsertMeta(attr, key, content) {
   if (!content) return;
@@ -71,15 +71,6 @@ export function JsonLd() {
         'Driver settlements',
         'Trucking payroll',
       ],
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: FAQS.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: { '@type': 'Answer', text: item.a },
-      })),
     },
   ];
 
