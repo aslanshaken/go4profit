@@ -1,17 +1,16 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './Components/Home/Home';
-import Trucking from './Components/Trucking/Trucking';
-
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Book from './pages/Book';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/trucking" element={<Trucking />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/book" element={<Book />} />
+      <Route path="/trucking" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
