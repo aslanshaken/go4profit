@@ -26,7 +26,7 @@
   --font-body: "Barlow", system-ui, sans-serif;
   --page-pad: clamp(20px, 4vw, 56px);
   --page-max: 1680px;
-  --nav-h: 72px;
+  --nav-h: 80px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -178,8 +178,8 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 .btn-nav {
   background: var(--color-accent-700);
   color: var(--color-paper);
-  padding: 10px 18px;
-  font-size: 14px;
+  padding: 12px 22px;
+  font-size: 17px;
 }
 .btn-nav:hover { background: var(--color-accent-800); color: var(--color-paper); }
 
@@ -244,7 +244,7 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   text-decoration: none;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 28px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-accent-800);
@@ -255,12 +255,12 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 .nav-links a:not(.btn) {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent-700);
