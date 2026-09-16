@@ -788,7 +788,68 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
   font-size: 13px;
   text-align: center;
   color: color-mix(in srgb, var(--color-text) 68%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 20px;
 }
+.footer-copy { margin: 0; }
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-legal a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+  text-decoration: none;
+}
+.footer-legal a:hover { color: var(--color-accent-900); text-decoration: underline; }
+
+.legal {
+  max-width: 72ch;
+  padding: 48px 0 96px;
+}
+.legal h1 { font-size: clamp(36px, 5vw, 64px); margin: 0 0 12px; }
+.legal-updated {
+  margin: 0 0 40px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 62%, transparent);
+}
+.legal-body h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: var(--color-accent-800);
+  margin: 40px 0 12px;
+}
+.legal-body h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+  margin: 24px 0 8px;
+}
+.legal-body p { margin: 0 0 14px; font-size: 17px; line-height: 1.55; }
+.legal-body ul {
+  margin: 0 0 16px;
+  padding-left: 1.25em;
+}
+.legal-body li { margin: 0 0 8px; font-size: 17px; line-height: 1.5; }
 
 .book-page { padding: 48px 0 80px; overflow-x: hidden; }
 .book-page h1 { font-size: clamp(32px, 5vw, 64px); margin: 16px 0 12px; }
@@ -906,6 +967,9 @@ a:hover { color: var(--color-accent-900); text-decoration: underline; }
 
 @media (max-width: 640px) {
   body { font-size: 16px; line-height: 26px; }
+  .legal { padding: 32px 0 72px; }
+  .legal-body p,
+  .legal-body li { font-size: 16px; }
   .section { padding: 40px 0 56px; }
   .why-panel { padding: 24px 20px 28px; }
   .card-grid-4 { grid-template-columns: 1fr; }

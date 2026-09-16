@@ -10,6 +10,8 @@ Create React App + React Router. Copy, contact, Calendly, and section data live 
 | --- | --- |
 | `/` | Homepage |
 | `/book` | Free consultation — Calendly embed |
+| `/privacy` | Privacy Policy |
+| `/terms` | Terms of Service |
 | `/trucking` | Redirects to `/` |
 
 Homepage: Why, Services, Numbers, Platform, Testimonials, Onboarding. Nav CTAs and “Free consultation” go to `/book`.

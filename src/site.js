@@ -44,7 +44,21 @@ export const SEO = {
     path: '/',
     robots: 'noindex, follow',
   },
+  privacy: {
+    title: 'Privacy Policy | Go4Profit',
+    description:
+      'How Go4Profit collects, uses, and protects personal and business information for website visitors, consultations, and trucking accounting clients.',
+    path: '/privacy',
+  },
+  terms: {
+    title: 'Terms of Service | Go4Profit',
+    description:
+      'Terms of Service for the Go4Profit website, free consultations, and trucking accounting, bookkeeping, tax, payroll, and reporting services.',
+    path: '/terms',
+  },
 };
+
+export const LEGAL_UPDATED = 'September 16, 2026';
 
 export const NAV_LINKS = [
   { href: '/#services', label: 'Services' },
