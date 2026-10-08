@@ -1,59 +1,43 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { CALENDLY_URL } from '../site';
 
-const EMBED_URL = `${CALENDLY_URL}?hide_gdpr_banner=1`;
-
-function loadCalendlyScript() {
-  return new Promise((resolve) => {
-    if (window.Calendly) {
-      resolve(window.Calendly);
-      return;
-    }
-
-    const existing = document.querySelector('script[data-calendly]');
-    if (existing) {
-      if (window.Calendly) resolve(window.Calendly);
-      else existing.addEventListener('load', () => resolve(window.Calendly), { once: true });
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    script.setAttribute('data-calendly', 'true');
-    script.onload = () => resolve(window.Calendly);
-    script.onerror = () => resolve(null);
-    document.body.appendChild(script);
+function embedUrl() {
+  const params = new URLSearchParams({
+    hide_gdpr_banner: '1',
+    embed_type: 'Inline',
+    embed_domain: window.location.hostname,
+    background_color: 'ffffff',
+    text_color: '17251f',
+    primary_color: '176b45',
   });
+  return `${CALENDLY_URL}?${params.toString()}`;
 }
 
 function CalendlyEmbed({ title = 'Schedule a free consultation' }) {
-  const hostRef = useRef(null);
+  const [height, setHeight] = useState(680);
 
   useEffect(() => {
-    let cancelled = false;
+    function onMessage(event) {
+      if (event.origin !== 'https://calendly.com') return;
+      const data = event.data;
+      if (!data || data.event !== 'calendly.page_height') return;
+      const raw = data.payload && data.payload.height;
+      const next = typeof raw === 'number' ? raw : Number.parseInt(String(raw), 10);
+      if (next > 480) setHeight(next);
+    }
 
-    loadCalendlyScript().then((calendly) => {
-      if (cancelled || !calendly?.initInlineWidget || !hostRef.current) return;
-      hostRef.current.innerHTML = '';
-      calendly.initInlineWidget({
-        url: EMBED_URL,
-        parentElement: hostRef.current,
-      });
-    });
-
-    return () => {
-      cancelled = true;
-    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
   }, []);
 
   return (
-    <div>
-      <div
-        ref={hostRef}
+    <div className="calendly-wrap">
+      <iframe
         className="calendly-frame"
-        role="region"
-        aria-label={title}
+        src={embedUrl()}
+        title={title}
+        loading="eager"
+        style={{ height: `${height}px` }}
       />
       <p className="calendly-fallback muted">
         If the calendar does not load,{' '}

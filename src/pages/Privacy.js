@@ -8,8 +8,8 @@ function Privacy() {
       <p>
         This Privacy Policy explains how Go4Profit LLC (&quot;Go4Profit,&quot; &quot;we,&quot; &quot;us,&quot; or
         &quot;our&quot;) collects, uses, shares, and protects information when you visit{' '}
-        <a href={SITE_URL}>{SITE_URL}</a>, book a consultation, email us, or use our trucking accounting,
-        bookkeeping, tax, payroll, IFTA, settlement, and reporting services.
+        <a href={SITE_URL}>{SITE_URL}</a>, book a consultation, email us, or use our accounting,
+        bookkeeping, payroll, and advisory services.
       </p>
       <p>
         A signed engagement letter, statement of work, or client agreement controls how we handle
@@ -23,9 +23,8 @@ function Privacy() {
 
       <h2>1. Who we are</h2>
       <p>
-        Go4Profit is a Chicago-based accounting and finance firm for trucking companies. We are the
-        business responsible for the personal and business information described here. We serve
-        owner-operators, growing fleets, and established fleets in the United States.
+        Go4Profit is a Chicago-based accounting and advisory firm for small businesses. We are the
+        business responsible for the personal and business information described here.
       </p>
 
       <h2>2. Who this policy covers</h2>
@@ -34,7 +33,7 @@ function Privacy() {
         <li>Website visitors and people who browse, download, or interact with our site</li>
         <li>People who book or attend a free or paid consultation</li>
         <li>Prospective clients and people who request a proposal</li>
-        <li>Clients, their owners, officers, authorized contacts, and employees or drivers when their data is needed to perform services</li>
+        <li>Clients, their owners, officers, authorized contacts, and employees when their data is needed to perform services</li>
         <li>Former clients, for records we must keep</li>
         <li>Vendors, referral partners, and professional advisors we work with</li>
         <li>Job applicants or contractors who send materials to us</li>
@@ -54,10 +53,10 @@ function Privacy() {
         way to be reached.
       </p>
 
-      <h3>Business and fleet information</h3>
+      <h3>Business information</h3>
       <p>
-        Entity type, fleet size, lanes or operations, systems you use (TMS, ELD, fuel cards,
-        factoring, payroll, bookkeeping software), and the services you are interested in.
+        Entity type, industry, systems you use (bookkeeping software, payroll, banks), and the
+        services you are interested in.
       </p>
 
       <h3>Consultation and booking</h3>
@@ -69,17 +68,16 @@ function Privacy() {
 
       <h3>Client work data</h3>
       <p>
-        If you become a client, we may receive or create information needed to keep books, file
-        returns, run payroll, reconcile settlements, or report cost per mile and profit by truck.
+        If you become a client, we may receive or create information needed to keep books, run
+        payroll, manage invoices and bills, or advise on cash flow and profitability.
         That can include:
       </p>
       <ul>
         <li>Financial statements, general ledgers, bank and credit-card activity, and invoices</li>
         <li>Employer identification numbers, tax IDs, and, where required for payroll or tax, Social Security numbers or ITINs</li>
-        <li>Driver names, pay, settlements, reimbursements, and related payroll records</li>
-        <li>Load, mileage, fuel, toll, IFTA, and equipment-cost data</li>
-        <li>Factoring deposits, deductions, and aging reports</li>
-        <li>Access credentials or exports from QuickBooks, Xero, TMS, ELD, fuel, bank, or payroll systems you authorize</li>
+        <li>Employee names, pay, and related payroll records</li>
+        <li>Customer invoices, vendor bills, and aging reports</li>
+        <li>Access credentials or exports from QuickBooks, payroll, bank, or other systems you authorize</li>
         <li>Correspondence about your account, adjustments, and filings</li>
       </ul>
       <p>
@@ -124,7 +122,7 @@ function Privacy() {
       <ul>
         <li>Directly from you, through forms, email, calls, bookings, and onboarding</li>
         <li>Automatically, through cookies, analytics, and server logs</li>
-        <li>From systems you connect or export for us (banks, TMS, ELD, payroll, bookkeeping software)</li>
+        <li>From systems you connect or export for us (banks, payroll, bookkeeping software)</li>
         <li>From your authorized contacts, prior accountants, or service providers you ask us to work with</li>
         <li>From public sources, such as your website or business listings, when relevant to a proposal</li>
       </ul>
@@ -136,8 +134,8 @@ function Privacy() {
         <li>Schedule and run consultations</li>
         <li>Respond to inquiries and send the information you asked for</li>
         <li>Prepare proposals and onboard clients</li>
-        <li>Perform bookkeeping, tax, payroll, IFTA, settlements, reporting, and related services</li>
-        <li>Produce cost-per-mile, profit-by-truck, and other management reports</li>
+        <li>Perform bookkeeping, payroll, invoicing, bill management, reporting, and related services</li>
+        <li>Produce financial statements and management reports</li>
         <li>Invoice, collect payment, and keep business records</li>
         <li>Meet tax, employment, professional, and legal obligations</li>
         <li>Detect, investigate, and prevent fraud, security incidents, or misuse</li>
@@ -202,7 +200,7 @@ function Privacy() {
       <ul>
         <li>With processors and subprocessors described in this policy</li>
         <li>With tax authorities, payroll agencies, or other government bodies when the engagement or the law requires it</li>
-        <li>With a bank, factor, TMS, or other vendor you ask us to contact</li>
+        <li>With a bank, payroll provider, or other vendor you ask us to contact</li>
         <li>With a successor if we merge, sell, or reorganize the business, under this policy or a notice we will provide</li>
         <li>If we believe disclosure is required by law, regulation, court order, or to protect people, property, or rights</li>
         <li>With your consent, or at your direction</li>
@@ -214,10 +212,10 @@ function Privacy() {
 
       <h2>10. Confidentiality of client work</h2>
       <p>
-        Client books, tax positions, driver pay, and fleet performance data are treated as
-        confidential professional information. Access is limited to people who need it to deliver
-        the engagement. We do not disclose that information to other clients or use it for
-        unrelated marketing.
+        Client books, payroll, and financial performance data are treated as confidential
+        professional information. Access is limited to people who need it to deliver the
+        engagement. We do not disclose that information to other clients or use it for unrelated
+        marketing.
       </p>
 
       <h2>11. Retention</h2>
@@ -280,7 +278,7 @@ function Privacy() {
         privacy.
       </p>
       <p>
-        If you are a driver or employee of a client, we may have received your information as a
+        If you are an employee of a client, we may have received your information as a
         service provider to that business. In that case we may direct you to the client, or handle
         the request with the client, as the law requires.
       </p>
@@ -294,8 +292,8 @@ function Privacy() {
 
       <h2>16. Automated tools and AI</h2>
       <p>
-        We may use software, including tools that summarize, reconcile, or flag patterns in fleet
-        and accounting data, to help our accountants work faster. Those tools support professional
+        We may use software, including tools that summarize, reconcile, or flag patterns in
+        accounting data, to help our accountants work faster. Those tools support professional
         judgment; they do not replace it. We do not make solely automated decisions that produce
         legal or similarly significant effects about website visitors. Client reporting and tax
         positions are reviewed by people responsible for the engagement.

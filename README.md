@@ -1,6 +1,6 @@
 # Go4Profit
 
-Marketing site for [Go4Profit](https://go4profit.us) — accounting, tax, payroll, and CFO support for trucking companies.
+Marketing site for [Go4Profit](https://go4profit.us) — Accounting & Advisory Services. Bookkeeping is the core offering, with payroll and advisory support.
 
 Create React App + React Router. Copy, contact, Calendly, and section data live in `src/site.js`.
 
@@ -9,14 +9,14 @@ Create React App + React Router. Copy, contact, Calendly, and section data live 
 | Path | What it is |
 | --- | --- |
 | `/` | Homepage |
+| `/services` | Service descriptions and inclusions |
+| `/bookkeeping` | Bookkeeping landing page — cleanup, monthly, payroll, advisory |
+| `/about` | Team, how we work, and where we serve |
+| `/courses` | Bookkeeping courses via Synoro Academy |
+| `/contact` | Inquiry form and contact details |
 | `/book` | Free consultation — Calendly embed |
 | `/privacy` | Privacy Policy |
 | `/terms` | Terms of Service |
-| `/trucking` | Redirects to `/` |
-
-Homepage: Why, Services, Numbers, Platform, Testimonials, Onboarding. Nav CTAs and “Free consultation” go to `/book`.
-
-SEO titles, descriptions, and keywords live in `src/site.js`. `public/sitemap.xml` and `public/robots.txt` point crawlers at `https://go4profit.us`.
 
 ## Local development
 
@@ -36,5 +36,6 @@ npm run build
 - Email: info@go4profit.us
 - Address: 1655 S Blue Island Ave #559, Chicago, IL 60608
 - Booking: [Calendly](https://calendly.com/synoro-ai/30min)
+- Courses: [Synoro Academy](https://www.synoro.academy/)
 
 © 2026 Go4Profit LLC. All rights reserved.

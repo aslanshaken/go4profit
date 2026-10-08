@@ -1,14 +1,28 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
+import About from './pages/About';
 import Book from './pages/Book';
+import Bookkeeping from './pages/Bookkeeping';
+import Contact from './pages/Contact';
+import Courses from './pages/Courses';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Platform from './pages/Platform';
+import Pricing from './pages/Pricing';
 import Privacy from './pages/Privacy';
+import Services from './pages/Services';
 import Terms from './pages/Terms';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/bookkeeping" element={<Bookkeeping />} />
+      <Route path="/platform" element={<Platform />} />
+      <Route path="/pricing" element={<Pricing />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/courses" element={<Courses />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/book" element={<Book />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/privacy-policy" element={<Navigate to="/privacy" replace />} />

@@ -2,22 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://go4profit.us/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/services</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/bookkeeping</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/platform</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/pricing</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/about</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/courses</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://go4profit.us/contact</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://go4profit.us/book</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://go4profit.us/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://go4profit.us/terms</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-02</lastmod>
   </url>
 </urlset>

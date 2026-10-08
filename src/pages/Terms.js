@@ -9,7 +9,7 @@ function Terms() {
         These Terms of Service (&quot;Terms&quot;) are a contract between you and Go4Profit LLC
         (&quot;Go4Profit,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) for use of{' '}
         <a href={SITE_URL}>{SITE_URL}</a>, booking tools we embed or link to, communications with
-        us, and — once you sign an engagement — our trucking accounting and related services.
+        us, and — once you sign an engagement — our accounting and advisory services.
       </p>
       <p>
         By using the site, booking a consultation, or requesting services, you agree to these Terms
@@ -25,7 +25,7 @@ function Terms() {
 
       <h2>1. Who may use the site</h2>
       <p>
-        The site is for business use, primarily trucking companies and their authorized
+        The site is for business use, primarily small businesses and their authorized
         representatives. You must be at least 18 and able to form a binding contract. If you use
         the site for a company, you represent that you have authority to bind that company, and
         &quot;you&quot; includes that company.
@@ -37,14 +37,13 @@ function Terms() {
 
       <h2>2. What we do</h2>
       <p>
-        Go4Profit provides accounting and finance support for trucking operations. Depending on the
-        engagement, that may include bookkeeping, financial reporting, tax and IFTA support,
-        payroll and driver accounting, accounts payable and receivable, settlement reconciliation,
-        cost-per-mile and profit-by-truck reporting, and related advisory work.
+        Go4Profit provides accounting and advisory support for small businesses. Depending on the
+        engagement, that may include bookkeeping, catch-up and cleanup, payroll support, accounts
+        payable and receivable, financial reporting, and related advisory work.
       </p>
       <p>
         The marketing site describes typical services. It is not a promise that every item is
-        included, available in every state, or appropriate for every fleet. Scope, timing, and fees
+        included, available in every state, or appropriate for every business. Scope, timing, and fees
         are set in a written engagement or a written confirmation we send you.
       </p>
 
@@ -65,13 +64,13 @@ function Terms() {
       <p>If you engage us, you agree to:</p>
       <ul>
         <li>Provide complete, accurate, and timely information, documents, and access</li>
-        <li>Authorize connections or exports from banks, TMS, ELD, fuel, factoring, payroll, and bookkeeping systems as needed</li>
+        <li>Authorize connections or exports from banks, payroll, and bookkeeping systems as needed</li>
         <li>Designate contacts who may instruct us, and tell us when those people change</li>
         <li>Review drafts, questions, and reports we send and respond by the dates we request</li>
         <li>Keep your own copies of source documents</li>
         <li>Pay invoices on the terms in the engagement</li>
-        <li>Comply with tax, employment, safety, and licensing laws that apply to your fleet — we support the finance function; we do not operate your trucks or replace your management</li>
-        <li>Tell us promptly about IRS or state notices, bank issues, driver-pay disputes, or system changes that affect the books</li>
+        <li>Comply with tax, employment, and licensing laws that apply to your business — we support the finance function; we do not replace your management</li>
+        <li>Tell us promptly about IRS or state notices, bank issues, payroll disputes, or system changes that affect the books</li>
       </ul>
       <p>
         We may pause or stop work, and we are not responsible for late filings, penalties, or
@@ -82,7 +81,7 @@ function Terms() {
       <p>
         We are not your lawyer, insurance broker, freight broker, or investment advisor. We do not
         provide legal opinions, represent you in court, or guarantee a tax refund, audit outcome,
-        lending decision, or profit level. Tax law and trucking rules change; positions we take are
+        lending decision, or profit level. Tax law and business rules change; positions we take are
         based on facts you provide and law as we understand it at the time.
       </p>
       <p>
@@ -98,7 +97,7 @@ function Terms() {
 
       <h2>6. Software, reports, and AI tools</h2>
       <p>
-        We may use our own trucking-finance software and third-party tools to ingest fleet data,
+        We may use our own software and third-party tools to ingest accounting data,
         reconcile activity, and produce KPIs. You grant us a limited license to process the data
         you supply for the engagement. You retain ownership of your underlying records. We retain
         ownership of our software, templates, methods, models, and the design of our reports.
@@ -190,9 +189,9 @@ function Terms() {
 
       <h2>12. Testimonials and examples</h2>
       <p>
-        Quotes, fleet examples, and sample truck cards on the site illustrate how reporting can
-        look. Sample numbers may be simplified or hypothetical. Other clients&apos; results are not
-        a guarantee of yours.
+        Quotes and sample reports on the site illustrate how reporting can look. Sample numbers
+        may be simplified or hypothetical. Other clients&apos; results are not a guarantee of
+        yours.
       </p>
 
       <h2>13. Disclaimers</h2>
@@ -233,8 +232,8 @@ function Terms() {
       <p>
         You will defend and indemnify Go4Profit against claims, damages, and reasonable legal fees
         arising from your misuse of the site, your violation of these Terms or the law, information
-        you provide that is false or infringing, or a third-party claim caused by your fleet
-        operations (including employment, safety, and freight claims) except to the extent caused
+        you provide that is false or infringing, or a third-party claim caused by your business
+        operations (including employment claims) except to the extent caused
         by our willful misconduct.
       </p>
 

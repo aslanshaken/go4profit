@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { NAV_LINKS } from '../site';
 import Button from './Button';
 
@@ -20,8 +20,8 @@ function SiteNav() {
 
   return (
     <nav className={`site-nav${open ? ' is-open' : ''}`} aria-label="Primary">
-      <Link to="/" className="nav-brand" data-wordmark="go4profit" onClick={() => setOpen(false)}>
-        Go4Profit
+      <Link to="/" className="brand" onClick={() => setOpen(false)}>
+        <img className="brand-logo" src="/images/logo-wordmark.png" alt="Go4Profit" />
       </Link>
       <button
         type="button"
@@ -35,12 +35,18 @@ function SiteNav() {
       </button>
       <div id="primary-nav" className="nav-links">
         {NAV_LINKS.map((link) => (
-          <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+          <NavLink
+            key={link.to}
+            to={link.to}
+            className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+            end={link.to === '/'}
+            onClick={() => setOpen(false)}
+          >
             {link.label}
-          </a>
+          </NavLink>
         ))}
         <Button to="/book" variant="nav">
-          Free consultation
+          Book a free consultation
         </Button>
       </div>
     </nav>
