@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 function initials(name) {
   const parts = name.trim().split(/\s+/);
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
@@ -54,6 +56,7 @@ function QuoteRow({ items, reverse = false }) {
 }
 
 function QuoteCarousel({ items }) {
+  const [showAll, setShowAll] = useState(false);
   const top = items.filter((_, index) => index % 2 === 0);
   const bottom = items.filter((_, index) => index % 2 === 1);
 
@@ -67,11 +70,18 @@ function QuoteCarousel({ items }) {
           </li>
         ))}
       </ul>
-      <div className="quote-stack" aria-hidden="true">
+      <div className={`quote-stack${showAll ? ' is-open' : ''}`} aria-hidden="true">
         {items.map((item) => (
           <QuoteCard key={item.name} item={item} />
         ))}
       </div>
+      {items.length > 3 && (
+        <div className="quote-more-wrap">
+          <button type="button" className="btn btn-secondary quote-more" onClick={() => setShowAll(true)}>
+            View more
+          </button>
+        </div>
+      )}
       <div className="quote-carousel" aria-hidden="true">
         <QuoteRow items={top} />
         <QuoteRow items={bottom} reverse />

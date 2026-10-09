@@ -68,6 +68,20 @@ export const SEO = {
     path: '/book',
     crumb: 'Book a consultation',
   },
+  getStarted: {
+    title: 'Accounting Support for Small Businesses | Go4Profit',
+    description:
+      'Get organized books, clear reports, and a team that makes time for your questions. Book a free 30-minute consultation. Bookkeeping from $350/month.',
+    path: '/get-started',
+    crumb: 'Get started',
+  },
+  trucking: {
+    title: 'Bookkeeping for Trucking Businesses | Go4Profit',
+    description:
+      'Organized books, clear reports, and a team that understands trucking. Book a free consultation. Monthly bookkeeping from $350/month.',
+    path: '/trucking',
+    crumb: 'Trucking',
+  },
   bookkeeping: {
     title: 'Monthly Bookkeeping from $350 | Go4Profit',
     description:
@@ -95,6 +109,13 @@ export const SEO = {
     path: '/terms',
     crumb: 'Terms of Service',
   },
+  blog: {
+    title: 'Clear Answers for Your Business | Go4Profit',
+    description:
+      'Practical advice on bookkeeping, cash flow, taxes, and smarter ways to manage your accounting.',
+    path: '/blog',
+    crumb: 'Blog',
+  },
 };
 
 export const LEGAL_UPDATED = 'October 2, 2026';
@@ -103,13 +124,14 @@ export const NAV_LINKS = [
   { to: '/services', label: 'Services' },
   { to: '/platform', label: 'Our platform' },
   { to: '/pricing', label: 'Pricing' },
+  { to: '/blog', label: 'Blog' },
   { to: '/about', label: 'About us' },
 ];
 
 export const HOME_POINTS = [
-  { icon: 'reports', label: 'Accurate books. On-time reports.' },
-  { icon: 'chat', label: 'Great customer support' },
-  { icon: 'pin', label: 'Chicago-based. Serving nationwide.' },
+  { icon: 'reports', label: 'Accurate books. On-time reports.', short: 'Accurate books' },
+  { icon: 'chat', label: 'Great customer support', short: 'Great support' },
+  { icon: 'pin', label: 'Chicago-based. Serving nationwide.', short: 'Chicago' },
 ];
 
 export const HOME_SERVICES = [
@@ -574,6 +596,7 @@ export const FOOTER_COMPANY = [
   { to: '/about', label: 'About' },
   { to: '/platform', label: 'Our platform' },
   { to: '/pricing', label: 'Pricing' },
+  { to: '/blog', label: 'Blog' },
   { to: '/contact', label: 'Contact' },
 ];
 

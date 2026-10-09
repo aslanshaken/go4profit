@@ -13,7 +13,7 @@ function embedUrl() {
   return `${CALENDLY_URL}?${params.toString()}`;
 }
 
-function CalendlyEmbed({ title = 'Schedule a free consultation' }) {
+function CalendlyEmbed({ title = 'Schedule a free consultation', frameLoading = 'eager' }) {
   const [height, setHeight] = useState(680);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function CalendlyEmbed({ title = 'Schedule a free consultation' }) {
         className="calendly-frame"
         src={embedUrl()}
         title={title}
-        loading="eager"
+        loading={frameLoading}
         style={{ height: `${height}px` }}
       />
       <p className="calendly-fallback muted">

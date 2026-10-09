@@ -49,7 +49,8 @@ function Home() {
             {HOME_POINTS.map((item) => (
               <li key={item.label}>
                 <SupportIcon name={item.icon} />
-                <span>{item.label}</span>
+                <span className="point-long">{item.label}</span>
+                <span className="point-short">{item.short}</span>
               </li>
             ))}
           </ul>

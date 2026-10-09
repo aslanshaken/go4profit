@@ -47,7 +47,7 @@ function upsertJsonLd(id, data) {
 }
 
 export function usePageMeta(page) {
-  const meta = SEO[page] || SEO.home;
+  const meta = typeof page === 'string' ? SEO[page] || SEO.home : page;
   const indexable = !meta.robots || !meta.robots.includes('noindex');
   const url = indexable ? `${SITE_URL}${meta.path === '/' ? '/' : meta.path}` : '';
 
@@ -67,29 +67,41 @@ export function usePageMeta(page) {
     upsertMeta('name', 'twitter:image', indexable ? SHARE_IMAGE : '');
     upsertLink('canonical', url);
 
-    const crumb =
+    const crumbItems =
       indexable && meta.path !== '/'
+        ? [
+            { name: 'Home', item: `${SITE_URL}/` },
+            ...(meta.parent ? [{ name: meta.parent.name, item: `${SITE_URL}${meta.parent.path}` }] : []),
+            { name: meta.crumb, item: url },
+          ]
+        : [];
+    upsertJsonLd(
+      'breadcrumb-ld',
+      crumbItems.length
         ? {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: `${SITE_URL}/`,
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: meta.crumb,
-                item: url,
-              },
-            ],
+            itemListElement: crumbItems.map((item, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: item.name,
+              item: item.item,
+            })),
           }
-        : null;
-    upsertJsonLd('breadcrumb-ld', crumb);
-  }, [indexable, meta.crumb, meta.description, meta.path, meta.robots, meta.title, url]);
+        : null
+    );
+    upsertJsonLd('article-ld', indexable && meta.article ? meta.article : null);
+  }, [
+    indexable,
+    meta.article,
+    meta.crumb,
+    meta.description,
+    meta.parent,
+    meta.path,
+    meta.robots,
+    meta.title,
+    url,
+  ]);
 }
 
 export function JsonLd() {
