@@ -1022,9 +1022,9 @@ h1.display {
   letter-spacing: -0.03em;
   color: var(--green);
 }
-.price-break { display: none; }
 @media (max-width: 860px) {
-  .price-break { display: unset; }
+  .price-card .price { font-size: clamp(16px, 5vw, 20px); }
+  .price-line { display: block; white-space: nowrap; }
 }
 .price-card p {
   margin: 0;

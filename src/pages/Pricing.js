@@ -40,8 +40,8 @@ function Pricing() {
               <p className="price">
                 {offer.price.includes(' · ') ? (
                   <>
-                    {offer.price.split(' · ')[0]} ·
-                    <br className="price-break" /> {offer.price.split(' · ')[1]}
+                    <span className="price-line">{offer.price.split(' · ')[0]} ·</span>
+                    <span className="price-line">{offer.price.split(' · ')[1]}</span>
                   </>
                 ) : (
                   offer.price
