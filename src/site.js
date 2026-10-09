@@ -506,7 +506,7 @@ export const PRICING_OFFERS = [
   {
     icon: 'tax',
     title: 'Individual & business tax',
-    price: 'Business from $450 · Personal: custom quote',
+    price: 'Business from $450, Personal: custom quote',
     body: 'Preparation and filing for your personal and business tax returns.',
   },
   {
