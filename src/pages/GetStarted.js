@@ -4,7 +4,7 @@ import CalendlyEmbed from '../components/CalendlyEmbed';
 import FaqList from '../components/FaqList';
 import SupportIcon from '../components/SupportIcon';
 import { usePageMeta } from '../seo';
-import { CONTACT, TESTIMONIALS } from '../site';
+import { CONTACT } from '../site';
 
 const PROBLEMS = [
   {
@@ -27,6 +27,15 @@ const PROBLEMS = [
     title: 'Chasing answers and updates?',
     body: 'Get a dedicated contact and one portal for your reports, documents, and questions.',
   },
+];
+
+const REELS = [
+  { name: 'Maya Chen', company: 'Brightpath Studio' },
+  { name: 'Andre Williams', company: 'Northwind Goods' },
+  { name: 'Leah Morgan', company: 'Cedar Market' },
+  { name: 'Omar Haddad', company: 'Summit Advisory' },
+  { name: 'Nina Brooks', company: 'Lakeview Clinic' },
+  { name: 'Samir Patel', company: 'Ironwood Supply' },
 ];
 
 const STEPS = [
@@ -134,39 +143,25 @@ function GetStarted() {
           </div>
         </section>
 
-        <section className="section" aria-labelledby="start-problems">
-          <div className="page-inner">
-            <h2 id="start-problems" className="display">
-              Accounting taking too much of your time?
-            </h2>
-            <div className="start-problems">
-              {PROBLEMS.map((item) => (
-                <article className="start-problem" key={item.title}>
-                  <SupportIcon name={item.icon} />
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.body}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="section" aria-labelledby="start-reviews">
           <div className="page-inner">
             <h2 id="start-reviews" className="display">
               Hear from our clients.
             </h2>
-            <VideoSlot
-              title="Client story"
-              caption="A short client video about what was difficult before, what the team helped with, and what is easier now."
-            />
-            <div className="start-reviews">
-              {TESTIMONIALS.slice(0, 3).map((item) => (
-                <figure className="start-review" key={item.name}>
-                  <blockquote>{item.quote}</blockquote>
-                  <figcaption>{item.name}</figcaption>
+            <div className="reel-grid">
+              {REELS.map((item) => (
+                <figure className="reel" key={item.name}>
+                  <div className="reel-frame">
+                    <span className="video-slot-play" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" width="22" height="22">
+                        <path d="M9 7.5v9l8-4.5-8-4.5Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                    <figcaption>
+                      <span className="reel-name">{item.name}</span>
+                      <span className="reel-company">{item.company}</span>
+                    </figcaption>
+                  </div>
                 </figure>
               ))}
             </div>
@@ -183,6 +178,25 @@ function GetStarted() {
             <p className="calendly-fallback muted">
               Can’t find a suitable time? Email <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
             </p>
+          </div>
+        </section>
+
+        <section className="section" aria-labelledby="start-problems">
+          <div className="page-inner">
+            <h2 id="start-problems" className="display">
+              Accounting taking too much of your time?
+            </h2>
+            <div className="start-problems">
+              {PROBLEMS.map((item) => (
+                <article className="start-problem" key={item.title}>
+                  <SupportIcon name={item.icon} />
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -213,15 +227,17 @@ function GetStarted() {
         </section>
       </main>
       <footer className="start-footer">
-        <p>© 2026 Go4Profit LLC</p>
-        <p>{CONTACT.address}</p>
+        <p>© 2026 Go4Profit LLC. All rights reserved.</p>
+        <p>{CONTACT.address}, USA</p>
         <p>
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
         </p>
-        <p>
-          <Link to="/privacy">Privacy Policy</Link>
-          <span aria-hidden="true"> · </span>
-          <Link to="/terms">Terms of Service</Link>
+        <p className="start-disclaimer">
+          Go4Profit provides bookkeeping and business support services. Website content is for
+          general information only and is not individualized tax, legal, or investment advice.
+          Services are provided under a signed engagement agreement. Use of this website is
+          governed by our <Link to="/privacy">Privacy Policy</Link> and{' '}
+          <Link to="/terms">Terms of Service</Link>.
         </p>
       </footer>
     </div>

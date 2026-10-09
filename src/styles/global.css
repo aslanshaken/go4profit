@@ -2182,13 +2182,13 @@ h1.display {
   font-weight: 600;
   color: var(--ink);
 }
-.video-slot { margin: 32px auto 0; max-width: 760px; text-align: left; }
+.video-slot { margin: 32px auto 0; max-width: 920px; text-align: left; }
 .video-slot-box {
   display: grid;
   place-items: center;
   align-content: center;
   gap: 10px;
-  min-height: 220px;
+  min-height: 300px;
   border: 1px dashed color-mix(in srgb, var(--green) 45%, var(--line));
   border-radius: 16px;
   background: var(--soft);
@@ -2309,6 +2309,12 @@ h1.display {
 }
 .start-footer p { margin: 0 0 6px; }
 .start-footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.start-footer .start-disclaimer {
+  max-width: 72ch;
+  margin: 10px auto 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
 
 @media (max-width: 860px) {
   .start-problems { grid-template-columns: 1fr; }
@@ -2317,5 +2323,5 @@ h1.display {
 }
 @media (max-width: 640px) {
   .start-nav .btn-nav { padding: 10px 12px; font-size: 13px; }
-  .video-slot-box { min-height: 180px; }
+  .video-slot-box { min-height: 220px; }
 }

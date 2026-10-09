@@ -206,31 +206,6 @@ function Trucking() {
           </div>
         </section>
 
-        <section className="section section-soft" aria-labelledby="truck-offers">
-          <div className="page-inner">
-            <h2 id="truck-offers" className="display">
-              Clear books. A better view of your business.
-            </h2>
-            <div className="start-problems">
-              {OFFERS.map((item) => (
-                <article className="start-problem" key={item.title}>
-                  <SupportIcon name={item.icon} />
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.body}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <p className="start-note">
-              Advisory, custom dashboards, and any specialized reporting are quoted separately.
-            </p>
-            <div className="actions start-offer-action">
-              <BookLink />
-            </div>
-          </div>
-        </section>
-
         <section className="section" aria-labelledby="truck-reviews">
           <div className="page-inner">
             <h2 id="truck-reviews" className="display">
@@ -272,6 +247,25 @@ function Trucking() {
           </div>
         </section>
 
+        <section className="section" aria-labelledby="truck-offers">
+          <div className="page-inner">
+            <h2 id="truck-offers" className="display">
+              Clear books. A better view of your business.
+            </h2>
+            <div className="start-problems">
+              {OFFERS.map((item) => (
+                <article className="start-problem" key={item.title}>
+                  <SupportIcon name={item.icon} />
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="section section-soft process-section" aria-labelledby="truck-steps">
           <div className="page-inner">
             <h2 id="truck-steps" className="display">
@@ -299,15 +293,17 @@ function Trucking() {
         </section>
       </main>
       <footer className="start-footer">
-        <p>© 2026 Go4Profit LLC</p>
-        <p>{CONTACT.address}</p>
+        <p>© 2026 Go4Profit LLC. All rights reserved.</p>
+        <p>{CONTACT.address}, USA</p>
         <p>
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
         </p>
-        <p>
-          <Link to="/privacy">Privacy Policy</Link>
-          <span aria-hidden="true"> · </span>
-          <Link to="/terms">Terms of Service</Link>
+        <p className="start-disclaimer">
+          Go4Profit provides bookkeeping and business support services. Website content is for
+          general information only and is not individualized tax, legal, or investment advice.
+          Services are provided under a signed engagement agreement. Use of this website is
+          governed by our <Link to="/privacy">Privacy Policy</Link> and{' '}
+          <Link to="/terms">Terms of Service</Link>.
         </p>
       </footer>
     </div>
