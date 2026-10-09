@@ -8,8 +8,6 @@ import { POSTS } from '../blog';
 function ArticleMeta({ post }) {
   return (
     <p className="blog-meta">
-      <span>{post.author}</span>
-      <span aria-hidden="true"> · </span>
       <time dateTime={post.published}>{post.publishedLabel}</time>
     </p>
   );
@@ -27,7 +25,7 @@ function Blog() {
     <PageShell>
       <PageIntro
         className="blog-intro"
-        kicker="Go4Profit Blog"
+        kicker="Blog"
         title="Clear answers for your business."
         lead="Practical advice on bookkeeping, cash flow, taxes, and smarter ways to manage your accounting."
       />

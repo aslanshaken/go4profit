@@ -12,9 +12,12 @@ function SiteNav() {
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
+    const root = document.documentElement;
+    if (!open) return undefined;
+    const previous = root.style.overflow;
+    root.style.overflow = 'hidden';
     return () => {
-      document.body.style.overflow = '';
+      root.style.overflow = previous;
     };
   }, [open]);
 

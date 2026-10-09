@@ -64,8 +64,6 @@ function BlogPost() {
         <p className="blog-cat">{post.category}</p>
         <h1 className="display">{post.title}</h1>
         <p className="blog-meta">
-          <span>{post.author}</span>
-          <span aria-hidden="true"> · </span>
           <time dateTime={post.published}>{post.publishedLabel}</time>
         </p>
         <img className="article-cover" src={post.image} alt={post.imageAlt} />

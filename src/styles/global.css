@@ -1161,6 +1161,19 @@ h1.display {
   border-radius: 0 0 16px 16px;
   pointer-events: none;
 }
+@media (max-width: 860px) {
+  .portal-frame {
+    overflow: hidden;
+    border: 1px solid #e4eaf1;
+    border-radius: 16px;
+  }
+  .portal-frame img {
+    width: 172%;
+    max-width: none;
+    border: 0;
+    border-radius: 0;
+  }
+}
 .screen-card {
   margin: 0;
   background: #fff;
@@ -1768,10 +1781,14 @@ h1.display {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 32px;
   align-items: center;
+  padding: 16px;
   color: inherit;
   text-decoration: none;
+  background: #fff;
+  border: 1.5px solid #b7cdc0;
+  border-radius: 16px;
 }
-.blog-featured:hover { text-decoration: none; }
+.blog-featured:hover { text-decoration: none; border-color: #8fb39c; }
 .blog-featured img,
 .blog-card img,
 .article-cover {
@@ -1780,7 +1797,7 @@ h1.display {
   object-fit: cover;
   background: var(--soft);
 }
-.blog-featured img,
+.blog-featured img { border-radius: 12px; }
 .article-cover {
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -1825,10 +1842,10 @@ h1.display {
   color: inherit;
   text-decoration: none;
   background: #fff;
-  border: 1px solid var(--line);
+  border: 1.5px solid #b7cdc0;
   border-radius: 16px;
 }
-.blog-card:hover { text-decoration: none; border-color: #c5d9cc; }
+.blog-card:hover { text-decoration: none; border-color: #8fb39c; }
 .blog-card-body {
   display: flex;
   flex-direction: column;
@@ -1941,8 +1958,8 @@ h1.display {
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: var(--nav-h);
     left: 0;
     right: 0;
     background: #fff;
@@ -1964,22 +1981,27 @@ h1.display {
   .actions { align-items: stretch; }
   .hero h1 { gap: 20px; line-height: 1.22; }
   .hero-points {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 8px;
-    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+    width: max-content;
     max-width: 100%;
-    margin-top: 28px;
+    margin: 28px auto 0;
   }
-  .hero-points li { font-size: 11px; gap: 6px; }
-  .point-long { display: none; }
-  .point-short { display: inline; }
+  .hero-points li {
+    font-size: 15px;
+    gap: 10px;
+    white-space: normal;
+  }
+  .point-long { display: inline; }
+  .point-short { display: none; }
   .hero-points .card-icon {
-    width: 28px;
-    height: 28px;
-    flex-basis: 28px;
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
   }
-  .hero-points .card-icon svg { width: 14px; height: 14px; }
+  .hero-points .card-icon svg { width: 17px; height: 17px; }
   .hero-actions .btn,
   .actions .btn { width: 100%; }
   .city-banner-frame { min-height: 520px; align-items: end; }
