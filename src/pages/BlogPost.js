@@ -58,9 +58,19 @@ function BlogPost() {
   return (
     <PageShell>
       <article className="page-inner article">
-        <p className="article-back">
-          <Link to="/blog">Blog</Link>
-        </p>
+        <Button to="/blog" variant="secondary" className="article-back">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path
+              d="M14.5 6.5 9 12l5.5 5.5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          Back
+        </Button>
         <p className="blog-cat">{post.category}</p>
         <h1 className="display">{post.title}</h1>
         <p className="blog-meta">

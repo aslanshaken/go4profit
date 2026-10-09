@@ -37,7 +37,16 @@ function Pricing() {
                 <SupportIcon name={offer.icon} />
                 <h2>{offer.title}</h2>
               </div>
-              <p className="price">{offer.price}</p>
+              <p className="price">
+                {offer.price.includes(' · ') ? (
+                  <>
+                    {offer.price.split(' · ')[0]} ·
+                    <br className="price-break" /> {offer.price.split(' · ')[1]}
+                  </>
+                ) : (
+                  offer.price
+                )}
+              </p>
               <p>{offer.body}</p>
               {offer.note ? <p className="price-note">{offer.note}</p> : null}
             </article>

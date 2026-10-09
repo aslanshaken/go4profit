@@ -9,6 +9,16 @@ function SiteNav() {
 
   useEffect(() => {
     setOpen(false);
+    if (location.hash) return undefined;
+    const root = document.documentElement;
+    root.style.overflow = '';
+    const frame = requestAnimationFrame(() => {
+      const behavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, 0);
+      root.style.scrollBehavior = behavior;
+    });
+    return () => cancelAnimationFrame(frame);
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
