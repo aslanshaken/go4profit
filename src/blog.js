@@ -13,6 +13,761 @@ function post(entry) {
 
 export const POSTS = [
   post({
+    slug: 'what-is-ai-native-accounting',
+    title: 'What Is AI-Native Accounting—and What Does It Mean for Your Business?',
+    description:
+      'Understand AI-native accounting, how it works, and what small businesses should expect from a service that combines people and technology.',
+    category: 'AI & accounting',
+    published: '2026-10-14',
+    publishedLabel: 'October 14, 2026',
+    image: '/images/blog/blog-ai-native.jpg',
+    imageAlt: 'An accounting professional beside an organized digital workspace',
+    sources: [
+      {
+        label: 'U.S. Small Business Administration, AI for small business',
+        href: 'https://www.sba.gov/business-guide/manage-your-business/ai-small-business',
+      },
+    ],
+    closing: {
+      text: 'Explore our platform or book a free consultation to discuss your business.',
+      to: '/book',
+      label: 'Book a free consultation',
+    },
+    intro: [
+      'You may have seen accounting firms describe themselves as “AI-powered” or “AI-native.” But what does that mean when you need your books organized, your questions answered, and your reports ready?',
+      'An AI-native accounting service builds AI into its everyday processes. Technology assists with repetitive work, while people remain responsible for delivering the service and applying accounting judgment.',
+      'The term alone doesn’t tell you how good a service is. What matters is how the firm works and what you receive.',
+    ],
+    sections: [
+      {
+        heading: 'How does AI-native accounting work?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'An accounting process involves gathering documents, recording transactions, resolving questions, reconciling accounts, and preparing reports.',
+          },
+          {
+            type: 'p',
+            text: 'AI can assist with parts of that process. Depending on the tools, it may extract information from documents, suggest transaction categories, or help identify items that need attention.',
+          },
+          {
+            type: 'p',
+            text: 'The team then handles exceptions, asks for missing context, and completes the agreed accounting work.',
+          },
+          {
+            type: 'p',
+            text: 'For a business owner, the aim is straightforward: less administrative effort and a clearer way to keep up with your finances.',
+          },
+        ],
+      },
+      {
+        heading: 'Is it different from accounting software?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Yes. Software gives you tools. An accounting service provides people who use those tools to complete agreed work.',
+          },
+          {
+            type: 'p',
+            text: 'Buying software doesn’t automatically mean someone is reconciling your accounts, correcting errors, or explaining your financial reports.',
+          },
+          {
+            type: 'p',
+            text: 'When choosing a service, ask what the team handles and what remains your responsibility.',
+          },
+        ],
+      },
+      {
+        heading: 'What should you receive?',
+        blocks: [
+          { type: 'p', text: 'Look for concrete deliverables:' },
+          {
+            type: 'ul',
+            items: [
+              'Organized accounting records',
+              'Reconciled bank and credit card accounts',
+              'Financial reports on an agreed schedule',
+              'A clear process for missing documents and questions',
+              'Someone you can contact for explanations',
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Technology should support those outcomes. It shouldn’t make the service harder to understand.',
+          },
+        ],
+      },
+      {
+        heading: 'A practical example',
+        blocks: [
+          { type: 'p', text: 'This example is fictional.' },
+          {
+            type: 'p',
+            text: 'Suppose you make recurring payments to a supplier. AI may recognize the pattern and suggest the usual category.',
+          },
+          {
+            type: 'p',
+            text: 'One month, however, the payment covers equipment rather than regular supplies. The description looks familiar, but the accounting treatment may be different.',
+          },
+          {
+            type: 'p',
+            text: 'The supporting invoice and your team’s judgment provide the missing context.',
+          },
+        ],
+      },
+      {
+        heading: 'Questions to ask before signing up',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Ask who is responsible for your books, how uncertain transactions are handled, and whether you can keep your existing accounting system.',
+          },
+          {
+            type: 'p',
+            text: 'Also ask what is included in the fee and how you access your records if you leave.',
+          },
+          {
+            type: 'p',
+            text: 'A clear answer is more useful than a broad promise about automation.',
+          },
+        ],
+      },
+      {
+        heading: 'How Go4Profit approaches it',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Go4Profit combines an experienced team with its own AI-powered technology to reduce routine manual work. You get personal support, financial reports, and one portal for your companies, documents, and questions.',
+          },
+          {
+            type: 'p',
+            text: 'AI’s use for repetitive tasks and business-data analysis is described in the SBA’s small-business guidance.',
+          },
+        ],
+        links: [
+          { to: '/services', label: 'Services' },
+          { to: '/platform', label: 'Our platform' },
+          { to: '/book', label: 'Book a free consultation' },
+        ],
+      },
+    ],
+  }),
+  post({
+    slug: 'ai-bookkeeping-vs-traditional-bookkeeping',
+    title: 'AI Bookkeeping vs. Traditional Bookkeeping: What Should You Actually Compare?',
+    description:
+      'Compare AI-assisted and traditional bookkeeping by service scope, communication, reporting, pricing, and accountability.',
+    category: 'Bookkeeping',
+    published: '2026-10-14',
+    publishedLabel: 'October 14, 2026',
+    image: '/images/blog/blog-compare.jpg',
+    imageAlt: 'Two tidy workspaces, one with paper files and one with digital records',
+    sources: [
+      {
+        label: 'Intuit, Intelligent automations: AI-powered bank feed',
+        href: 'https://investors.intuit.com/news-events/press-releases/detail/1262/intuit-launches-intelligent-automations-to-simplify-accounting-for-businesses',
+      },
+    ],
+    closing: {
+      text: 'View our services or book a free consultation.',
+      to: '/book',
+      label: 'Book a free consultation',
+    },
+    intro: [
+      'You’re choosing a bookkeeping service. One provider emphasizes personal experience. Another promotes AI and automation.',
+      'Which should you choose?',
+      'Start with the service itself. Both approaches can produce useful books, and both can fall short if responsibilities, communication, or quality checks are unclear.',
+      'The better choice is the team and process that fit your business.',
+    ],
+    sections: [
+      {
+        heading: 'What does “AI bookkeeping” mean?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'AI bookkeeping uses technology to assist with tasks such as extracting document information, suggesting categories, and identifying unusual activity.',
+          },
+          {
+            type: 'p',
+            text: 'It doesn’t necessarily mean every task is automated. Providers use the term differently, so ask what their technology actually does.',
+          },
+          {
+            type: 'p',
+            text: 'Traditional bookkeeping also often uses software, bank feeds, and automated rules. The difference is rarely as simple as paper versus technology.',
+          },
+        ],
+      },
+      {
+        heading: 'Compare the work included',
+        blocks: [
+          { type: 'p', text: 'Before comparing prices, compare scope.' },
+          {
+            type: 'p',
+            text: 'Does the service include account reconciliation? Monthly reports? Correcting existing errors? Support with questions?',
+          },
+          { type: 'p', text: 'Are payroll, tax preparation, and advisory separate?' },
+          {
+            type: 'p',
+            text: 'Two monthly fees may look similar while covering very different work.',
+          },
+        ],
+      },
+      {
+        heading: 'Compare how questions are resolved',
+        blocks: [
+          {
+            type: 'p',
+            text: 'A transaction can require information that software doesn’t have.',
+          },
+          {
+            type: 'p',
+            text: 'Was a payment for business or personal use? Did it repay a loan? Was an invoice already recorded elsewhere?',
+          },
+          {
+            type: 'p',
+            text: 'Ask how the provider sends those questions, who answers yours, and how unresolved items affect report delivery.',
+          },
+          {
+            type: 'p',
+            text: 'A good process makes it clear what is needed and what happens next.',
+          },
+        ],
+      },
+      {
+        heading: 'Compare reporting and access',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Confirm which reports you receive and when they are prepared.',
+          },
+          {
+            type: 'p',
+            text: 'Ask whether you can access your accounting records directly and how you obtain documents or historical reports.',
+          },
+          {
+            type: 'p',
+            text: 'If a provider offers a dashboard, find out whether the figures reflect completed accounting work or records that are still being processed.',
+          },
+        ],
+      },
+      {
+        heading: 'Compare total pricing',
+        blocks: [
+          { type: 'p', text: 'Look beyond the advertised starting price.' },
+          {
+            type: 'p',
+            text: 'Ask about setup, cleanup, software subscriptions, additional companies, and reporting outside the standard scope.',
+          },
+          {
+            type: 'p',
+            text: 'Also understand how pricing changes as your transaction volume or needs grow.',
+          },
+        ],
+      },
+      {
+        heading: 'A practical example',
+        blocks: [
+          { type: 'p', text: 'This example is fictional.' },
+          {
+            type: 'p',
+            text: 'A business has several bank accounts and needs reports for a financing application.',
+          },
+          {
+            type: 'p',
+            text: 'A low-cost categorization tool may help organize transactions, but the owner still needs someone to reconcile accounts and confirm whether the lender’s reporting requirements are met.',
+          },
+          {
+            type: 'p',
+            text: 'The right comparison is the full amount of work required—not simply the software’s monthly price.',
+          },
+        ],
+      },
+      {
+        heading: 'What matters most',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Choose a provider that explains its responsibilities, delivers the reports you need, and gives you a dependable way to ask questions.',
+          },
+          {
+            type: 'p',
+            text: 'AI can support efficiency. Experience helps turn the work into useful accounting.',
+          },
+        ],
+      },
+      {
+        heading: 'Working with Go4Profit',
+        blocks: [
+          {
+            type: 'p',
+            text: 'We agree on services and pricing before starting. Our team handles the agreed accounting work, supported by technology that reduces repetitive tasks.',
+          },
+          {
+            type: 'p',
+            text: 'For a concrete example of AI assistance, Intuit describes bank-feed category suggestions based on historical patterns, with users able to review or amend them.',
+          },
+        ],
+        links: [
+          { to: '/services', label: 'Services' },
+          { to: '/platform', label: 'Our platform' },
+          { to: '/book', label: 'Book a free consultation' },
+        ],
+      },
+    ],
+  }),
+  post({
+    slug: 'quickbooks-connected-books-not-finished',
+    title: 'QuickBooks Is Connected. Why Aren’t Your Books Finished?',
+    description:
+      'A connected QuickBooks bank feed doesn’t mean your bookkeeping is complete. Learn what still needs categorization, matching, and reconciliation.',
+    category: 'QuickBooks',
+    published: '2026-10-14',
+    publishedLabel: 'October 14, 2026',
+    image: '/images/blog/blog-quickbooks.jpg',
+    imageAlt: 'Imported transactions beside a completed monthly checklist',
+    sources: [
+      {
+        label: 'Intuit QuickBooks, Learn the reconcile workflow',
+        href: 'https://quickbooks.intuit.com/learn-support/en-us/help-article/reconciliation-reports/learn-reconcile-workflow-quickbooks/L8ZibUuVE_US_en_US',
+      },
+    ],
+    closing: {
+      text: 'Already using QuickBooks but unsure about your books? Book a free consultation.',
+      to: '/book',
+      label: 'Book a free consultation',
+    },
+    intro: [
+      'Your bank account is connected to QuickBooks. Transactions arrive automatically, and the dashboard shows activity.',
+      'It’s easy to assume your bookkeeping is taken care of.',
+      'A bank connection is a useful starting point. But downloaded transactions still need to become accurate accounting records, and those records need to be checked.',
+    ],
+    sections: [
+      {
+        heading: 'Importing transactions is only one step',
+        blocks: [
+          {
+            type: 'p',
+            text: 'An imported payment tells you that money moved. It may not explain why.',
+          },
+          {
+            type: 'p',
+            text: 'A deposit could be customer income, borrowed funds, a transfer, or money contributed by an owner.',
+          },
+          {
+            type: 'p',
+            text: 'A withdrawal could include loan principal, interest, equipment, or an ordinary operating expense.',
+          },
+          { type: 'p', text: 'Those differences affect your reports.' },
+        ],
+      },
+      {
+        heading: 'Transactions may need matching',
+        blocks: [
+          {
+            type: 'p',
+            text: 'If an invoice, bill, or payment is already recorded, the downloaded bank item may need to be matched to it.',
+          },
+          { type: 'p', text: 'Adding it again can create a duplicate.' },
+          {
+            type: 'p',
+            text: 'Transfers between your own accounts also need consistent treatment. Recording both sides incorrectly can inflate income or expenses.',
+          },
+        ],
+      },
+      {
+        heading: 'Categorization doesn’t replace reconciliation',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Reconciliation compares your records with bank or credit card statements for a specific period.',
+          },
+          {
+            type: 'p',
+            text: 'It helps identify missing transactions, duplicates, timing differences, and incorrect balances.',
+          },
+          {
+            type: 'p',
+            text: 'Even when categories look reasonable, the account may still need reconciliation.',
+          },
+        ],
+      },
+      {
+        heading: 'Other records may be missing',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Your bank feed doesn’t provide every detail needed for your books.',
+          },
+          {
+            type: 'p',
+            text: 'You may need payroll reports, loan statements, equipment invoices, payment-processor records, and explanations of owner transactions.',
+          },
+          {
+            type: 'p',
+            text: 'For example, a payment processor might deposit sales after deducting fees. Recording only the deposit as revenue may leave the underlying activity incomplete.',
+          },
+          {
+            type: 'p',
+            text: 'The correct approach depends on your setup and records.',
+          },
+        ],
+      },
+      {
+        heading: 'A practical example',
+        blocks: [
+          { type: 'p', text: 'This example is fictional.' },
+          {
+            type: 'p',
+            text: 'You receive a loan deposit and use it to buy equipment.',
+          },
+          {
+            type: 'p',
+            text: 'If the deposit is categorized as sales and the purchase as an ordinary expense without further review, your reports may misrepresent both revenue and the equipment you own.',
+          },
+          {
+            type: 'p',
+            text: 'The bank feed captured the movement of money. The accounting still needed attention.',
+          },
+        ],
+      },
+      {
+        heading: 'What to check each month',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Confirm that all accounts are included, downloaded activity has been processed, statement balances have been reconciled, and important supporting documents have been reviewed.',
+          },
+          { type: 'p', text: 'Then review the reports for unexplained changes.' },
+          {
+            type: 'p',
+            text: 'A report can be generated before the work is complete. Ask which periods are finished and which still have outstanding questions.',
+          },
+        ],
+      },
+      {
+        heading: 'How Go4Profit helps',
+        blocks: [
+          {
+            type: 'p',
+            text: 'We work in QuickBooks to categorize transactions, reconcile accounts, resolve questions, and prepare monthly financial reports.',
+          },
+          {
+            type: 'p',
+            text: 'Intuit’s reconciliation documentation distinguishes transactions still awaiting bank-feed review from statement comparisons and completed reconciliation.',
+          },
+        ],
+        links: [
+          { to: '/services#bookkeeping', label: 'Services' },
+          { to: '/platform', label: 'Our platform' },
+          { to: '/book', label: 'Book a free consultation' },
+        ],
+      },
+    ],
+  }),
+  post({
+    slug: 'month-end-reports-always-late',
+    title: 'Still Waiting for Last Month’s Reports? Fix the Process Behind the Delay.',
+    description:
+      'Discover why monthly financial reports get delayed and how a clearer accounting process can reduce waiting and repeated follow-ups.',
+    category: 'Financial reporting',
+    published: '2026-10-14',
+    publishedLabel: 'October 14, 2026',
+    image: '/images/blog/blog-reports.jpg',
+    imageAlt: 'A calendar, document tray, and organized accounting checklist',
+    sources: [
+      {
+        label: 'U.S. Small Business Administration, AI for small business',
+        href: 'https://www.sba.gov/business-guide/manage-your-business/ai-small-business',
+      },
+    ],
+    closing: {
+      text: 'Want an accounting process that’s easier to keep up with? Book a free consultation.',
+      to: '/book',
+      label: 'Book a free consultation',
+    },
+    intro: [
+      'You want to know how the business performed last month. But the reports aren’t ready.',
+      'Someone is waiting for a statement. Another transaction needs an explanation. The same questions are spread across emails and messages.',
+      'By the time everything is finished, you’re already making decisions for the next month.',
+      'Improving report delivery starts with understanding what is holding the work up.',
+    ],
+    sections: [
+      {
+        heading: 'Reports depend on completed accounting',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Generating a report takes moments. Preparing the records behind it takes work.',
+          },
+          {
+            type: 'p',
+            text: 'Transactions need to be recorded, accounts reconciled, and relevant adjustments completed.',
+          },
+          {
+            type: 'p',
+            text: 'If important information is missing, the report may be incomplete or require later changes.',
+          },
+          {
+            type: 'p',
+            text: 'The aim is a reliable reporting schedule—not a fast export of unfinished numbers.',
+          },
+        ],
+      },
+      {
+        heading: 'Make responsibilities clear',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Agree on who provides statements, receipts, payroll information, and explanations.',
+          },
+          {
+            type: 'p',
+            text: 'Choose a regular document deadline and a target reporting date. Confirm what happens if essential information arrives late.',
+          },
+          {
+            type: 'p',
+            text: 'This makes expectations easier to manage on both sides.',
+          },
+        ],
+      },
+      {
+        heading: 'Keep outstanding questions together',
+        blocks: [
+          {
+            type: 'p',
+            text: 'A list of open questions is easier to handle than separate requests across several channels.',
+          },
+          {
+            type: 'p',
+            text: 'Each request should explain what is needed and which transaction or document it concerns.',
+          },
+          {
+            type: 'p',
+            text: 'Where possible, answer questions throughout the month instead of saving them all for month-end.',
+          },
+        ],
+      },
+      {
+        heading: 'Where technology can help',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Automation can assist with organizing incoming records, drafting reminders, and preparing information for the team.',
+          },
+          {
+            type: 'p',
+            text: 'AI may also help flag changes that deserve attention. These are potential uses, not a substitute for completing the accounting work.',
+          },
+          {
+            type: 'p',
+            text: 'A portal can give everyone a shared place to see outstanding requests and progress.',
+          },
+          {
+            type: 'p',
+            text: 'The SBA identifies reminders, reusable templates, and other repetitive tasks as potential uses of AI. The workflow above is a practical recommendation, not a promised turnaround time.',
+          },
+        ],
+      },
+      {
+        heading: 'A practical example',
+        blocks: [
+          { type: 'p', text: 'This example is fictional.' },
+          {
+            type: 'p',
+            text: 'An owner waits until the end of each month to send receipts. Several payments remain unclear, so the bookkeeper sends questions one at a time.',
+          },
+          {
+            type: 'p',
+            text: 'A better process collects documents during the month and keeps questions in one list. The owner answers them regularly.',
+          },
+          {
+            type: 'p',
+            text: 'This doesn’t remove every delay, but it reduces the amount of unresolved work at closing time.',
+          },
+        ],
+      },
+      {
+        heading: 'Ask what is finished',
+        blocks: [
+          {
+            type: 'p',
+            text: 'When viewing a dashboard or report, check the period covered and whether the records are complete.',
+          },
+          {
+            type: 'p',
+            text: 'A current bank balance and a finalized monthly report serve different purposes. Clear status information helps you use each appropriately.',
+          },
+        ],
+      },
+      {
+        heading: 'How Go4Profit helps',
+        blocks: [
+          {
+            type: 'p',
+            text: 'We agree on reporting schedules, follow up on missing information, and keep you informed about progress. Our portal brings reports, documents, and questions together.',
+          },
+        ],
+        links: [
+          { to: '/services', label: 'Services' },
+          { to: '/platform', label: 'Our platform' },
+          { to: '/book', label: 'Book a free consultation' },
+        ],
+      },
+    ],
+  }),
+  post({
+    slug: 'custom-financial-dashboards-small-business',
+    title: 'Your Financial Reports Show the Total. Which Part of Your Business Is Making Money?',
+    description:
+      'Learn when a custom financial dashboard is useful, which business metrics to track, and how AI can support analysis.',
+    category: 'Business insights',
+    published: '2026-10-14',
+    publishedLabel: 'October 14, 2026',
+    image: '/images/blog/blog-dashboard.jpg',
+    imageAlt:
+      'Customer, project, and location information coming together in one dashboard',
+    sources: [],
+    closing: {
+      text: 'Need answers beyond standard reports? Discuss a custom dashboard with our team.',
+      to: '/book',
+      label: 'Book a free consultation',
+    },
+    intro: [
+      'Your profit and loss statement shows how the business performed overall.',
+      'But you may still have questions.',
+      'Which service contributes the most? Is the second location doing well? Which projects take more work than expected? Is another truck helping the business earn more?',
+      'A custom financial dashboard can help answer specific questions by organizing the relevant information around your business.',
+    ],
+    sections: [
+      {
+        heading: 'Start with a decision, not a chart',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Before choosing metrics, decide what you need to understand.',
+          },
+          {
+            type: 'p',
+            text: 'If you’re reviewing prices, look at delivery costs and margins. If you’re planning a hire, look at workload, staffing costs, and cash commitments.',
+          },
+          {
+            type: 'p',
+            text: 'A dashboard is most useful when it supports a recurring decision.',
+          },
+          {
+            type: 'p',
+            text: 'More charts don’t automatically provide more clarity.',
+          },
+        ],
+      },
+      {
+        heading: 'Choose metrics that fit your business',
+        blocks: [
+          { type: 'p', text: 'Useful measures depend on how you operate.' },
+          {
+            type: 'p',
+            text: 'A service business might track project margins and billable time. A retailer might compare sales and gross margins by product group. A multi-location business might compare revenue and direct costs by location.',
+          },
+          {
+            type: 'p',
+            text: 'A trucking company might track revenue per mile, cost per mile, and truck-level performance.',
+          },
+          {
+            type: 'p',
+            text: 'Define each measure clearly. For example, a cost-per-mile figure changes depending on which expenses and miles you include.',
+          },
+        ],
+      },
+      {
+        heading: 'Good reporting needs usable data',
+        blocks: [
+          {
+            type: 'p',
+            text: 'To report by customer, project, truck, or location, the underlying records need to identify those activities.',
+          },
+          {
+            type: 'p',
+            text: 'Some costs belong directly to one activity. Others are shared.',
+          },
+          {
+            type: 'p',
+            text: 'Shared costs need an agreed allocation method. Otherwise, one part of the business may appear more profitable simply because it has been assigned fewer expenses.',
+          },
+          {
+            type: 'p',
+            text: 'Where information is missing, the dashboard should make that limitation clear.',
+          },
+        ],
+      },
+      {
+        heading: 'A practical example',
+        blocks: [
+          { type: 'p', text: 'This example is fictional.' },
+          {
+            type: 'p',
+            text: 'Two projects each generate $10,000 in revenue. One uses substantially more staff time and materials.',
+          },
+          {
+            type: 'p',
+            text: 'Total revenue alone makes them look equal. Tracking the relevant delivery costs shows the difference.',
+          },
+          {
+            type: 'p',
+            text: 'That information can support a discussion about pricing, scope, or how the work is delivered.',
+          },
+        ],
+      },
+      {
+        heading: 'What can AI add?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'AI can help summarize movements and suggest questions for further investigation.',
+          },
+          {
+            type: 'p',
+            text: 'It might highlight a cost increase or a change in one location’s results. But detecting a pattern doesn’t prove its cause.',
+          },
+          {
+            type: 'p',
+            text: 'The team still needs to check the records and understand what happened in the business.',
+          },
+        ],
+      },
+      {
+        heading: 'Start small',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Choose a few useful metrics, agree on definitions, and decide how often the data will be refreshed.',
+          },
+          {
+            type: 'p',
+            text: 'Make sure the dashboard distinguishes actual results from forecasts and incomplete information.',
+          },
+          {
+            type: 'p',
+            text: 'Expand it when the first measures are helping you make decisions.',
+          },
+        ],
+      },
+      {
+        heading: 'How Go4Profit helps',
+        blocks: [
+          {
+            type: 'p',
+            text: 'We build custom tools and dashboards around your goals and available data. We confirm the features, data requirements, timeline, and price before building.',
+          },
+        ],
+        links: [
+          { to: '/services#ai-tools', label: 'Services' },
+          { to: '/platform', label: 'Our platform' },
+          { to: '/book', label: 'Book a free consultation' },
+        ],
+      },
+    ],
+  }),
+  post({
     slug: 'making-sales-but-still-short-on-cash',
     title: 'Making Sales but Still Short on Cash?',
     description:

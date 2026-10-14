@@ -8,6 +8,8 @@ import { POSTS } from '../blog';
 function ArticleMeta({ post }) {
   return (
     <p className="blog-meta">
+      By {post.author}
+      <span aria-hidden="true"> · </span>
       <time dateTime={post.published}>{post.publishedLabel}</time>
     </p>
   );
