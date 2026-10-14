@@ -11,6 +11,12 @@ export const CONTACT = {
   serving: 'Based in the Chicago area. Serving clients remotely across the United States.',
 };
 
+export const SOCIAL = [
+  { id: 'maps', label: 'Google Maps', href: 'https://maps.app.goo.gl/8nvgJfohiiRPmbzL8' },
+  { id: 'yelp', label: 'Yelp', href: 'https://yelp.com/biz/go4profit-llc-chicago' },
+  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/go4profit' },
+];
+
 export const SEO = {
   home: {
     title: 'Bookkeeping & Accounting for Small Businesses | Go4Profit',

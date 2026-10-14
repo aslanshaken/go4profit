@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CONTACT, FOOTER_COMPANY, FOOTER_SERVICES } from '../site';
+import { CONTACT, FOOTER_COMPANY, FOOTER_SERVICES, SOCIAL } from '../site';
 
 function measureWordInk(value, fontSize, tracking) {
   const canvas = document.createElement('canvas');
@@ -82,6 +82,77 @@ function FooterWordmark() {
   );
 }
 
+function SocialIcon({ id }) {
+  if (id === 'maps') {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <defs>
+          <clipPath id="maps-pin">
+            <path d="M12 21.4s6.4-5.5 6.4-10.2a6.4 6.4 0 1 0-12.8 0c0 4.7 6.4 10.2 6.4 10.2z" />
+          </clipPath>
+        </defs>
+        <g clipPath="url(#maps-pin)">
+          <rect x="5" y="2" width="7" height="9.2" fill="#EA4335" />
+          <rect x="12" y="2" width="7" height="9.2" fill="#FBBC05" />
+          <rect x="5" y="11.2" width="7" height="11" fill="#34A853" />
+          <rect x="12" y="11.2" width="7" height="11" fill="#4285F4" />
+          <circle cx="12" cy="10.4" r="2.35" fill="#fff" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === 'yelp') {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <g fill="#D32323">
+          <rect x="10.15" y="1.5" width="3.7" height="8.4" rx="1.85" />
+          <rect x="10.15" y="1.5" width="3.7" height="8.4" rx="1.85" transform="rotate(72 12 12)" />
+          <rect x="10.15" y="1.5" width="3.7" height="8.4" rx="1.85" transform="rotate(144 12 12)" />
+          <rect x="10.15" y="1.5" width="3.7" height="8.4" rx="1.85" transform="rotate(216 12 12)" />
+          <rect x="10.15" y="1.5" width="3.7" height="8.4" rx="1.85" transform="rotate(288 12 12)" />
+        </g>
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="#0A66C2"
+        d="M5.7 3.4a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2zM4 9.1h3.4V21H4V9.1zm6.1 0h3.3v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5V21h-3.4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-3.4V9.1z"
+      />
+    </svg>
+  );
+}
+
+function SocialProfiles() {
+  return (
+    <div className="footer-social">
+      {SOCIAL.map((item) => {
+        const icon = <SocialIcon id={item.id} />;
+        if (!item.href) {
+          return (
+            <span key={item.id} className="footer-social-link" role="img" aria-label={item.label} title={item.label}>
+              {icon}
+            </span>
+          );
+        }
+        return (
+          <a
+            key={item.id}
+            className="footer-social-link"
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={item.label}
+          >
+            {icon}
+          </a>
+        );
+      })}
+    </div>
+  );
+}
+
 function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -89,12 +160,13 @@ function SiteFooter() {
         <div className="footer-brand">
           <Link to="/" className="brand">
             <span className="brand-mark">Go4Profit</span>
-            <span className="brand-tag">AI-native accounting firm</span>
+            <span className="brand-tag">AI-Native Accounting Firm</span>
           </Link>
           <div className="footer-contact">
             <a className="footer-email" href={`mailto:${CONTACT.email}`}>
               {CONTACT.email}
             </a>
+            <SocialProfiles />
           </div>
         </div>
         <nav className="footer-col" aria-label="Services">

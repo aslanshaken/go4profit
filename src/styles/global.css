@@ -1686,6 +1686,26 @@ h1.display {
   overflow-wrap: anywhere;
 }
 .footer-email:hover { color: var(--green); }
+.footer-social {
+  display: flex;
+  gap: 8px;
+  margin-top: 2px;
+}
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+}
+a.footer-social-link:hover {
+  background: var(--green-soft);
+  border-color: #8fb39c;
+}
+.footer-social-link svg { width: 18px; height: 18px; display: block; }
 .footer-col {
   display: grid;
   gap: 10px;
