@@ -15,6 +15,7 @@ export const SOCIAL = [
   { id: 'maps', label: 'Google Maps', href: 'https://maps.app.goo.gl/8nvgJfohiiRPmbzL8' },
   { id: 'yelp', label: 'Yelp', href: 'https://yelp.com/biz/go4profit-llc-chicago' },
   { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/go4profit' },
+  { id: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100090558631045' },
 ];
 
 export const SEO = {

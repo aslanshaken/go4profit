@@ -114,6 +114,16 @@ function SocialIcon({ id }) {
       </svg>
     );
   }
+  if (id === 'facebook') {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="#1877F2"
+          d="M14.2 8.4V6.7c0-.8.5-1.2 1.3-1.2h1.5V3h-2.4C11.5 3 10.2 4.6 10.2 6.6v1.8H8.2V11h2v10h3.6V11h2.4l.5-2.6h-2.9z"
+        />
+      </svg>
+    );
+  }
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path
